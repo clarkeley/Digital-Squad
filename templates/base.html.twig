@@ -2,11 +2,103 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <title>{% block title %}DigitalSquad{% endblock %}</title>
+        {% block stylesheets %}
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+                  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+                  crossorigin="anonymous"/>
+            <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        {% endblock %}
+        <style>
+            .modal-full {
+                min-width: 100%;
+                margin: 0;
+            }
+            .modal-full .modal-content {
+                min-height: 100vh;
+            }
+            .page-footer {
+                background: darkgray;
+            }
+        </style>
+
     </head>
     <body>
+        {#Menu#}
+        <nav class="navbar sticky-top pull-right" data-toggle="modal" data-target=".bd-example-modal-lg">
+            <a class="navbar-brand" href="#">
+                <img src="{{ asset('menu.png') }}" width="30" height="30" class="d-inline-block align-top" alt="">
+            </a>
+        </nav>
+        <div class="container">
+            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-full">
+                    <div class="modal-content">
+                        <div class="col-lg-3">
+                            <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                            <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+                            <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-lg-12">
+                            <img src="{{ asset('infini4.png') }}" width="300" height="200" alt="">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <a href="{{ path('home') }}">ACCUEIL</a></br>
+                            <a href="{{ path('catalog') }}">NOS SERVICES</a></br>
+                            <a href="{{ path('portfolio') }}">NOS CLIENT</a></br>
+                            <a href="{{ path('blog') }}">NOTRE BLOG</a></br>
+                            <a href="{{ path('contact') }}">NOUS CONTACTER</a></br>
+
+                            <a href="{{ path('catalog') }}" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Estimation en direct</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+
+        {% block javascripts %}
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        {% endblock %}
+
+        {#Footer#}
+        <footer class="page-footer ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                        <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+                        <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                        <img src="{{ asset('infini4.png') }}" width="300" height="200" alt="">
+                </div>
+                <div class="col-md-6 mb-4">
+                    <p>+01 02 03 04 05</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <a href="{{ path('contact') }}" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Contactez-nous !</a>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-copyright text-center py-3">© 2019 Copyright:
+                <a href="#"> DigitalSquad</a>
+            </div>
+        </footer>
     </body>
 </html>

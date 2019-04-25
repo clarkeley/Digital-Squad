@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Formulaire de Contact{% endblock %}
+
+{% block body %}
+
+    <body class="text-center">
+
+    {# Formulaire de contact #}
+    {{ form_start(form) }}
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                Veuillez remplir le formulaire
+            </div>
+            <div class="card-block">
+
+                <div class="form-group">
+                    {{ form_row(form.Nom) }}
+                </div>
+                <div class="form-group">
+                    {{ form_row(form.Prenom) }}
+                </div>
+                <div class="form-group">
+                    {{ form_row(form.Societe) }}
+                </div>
+                <div class="form-group">
+                    {{ form_row(form.Objet) }}
+                </div>
+                <div class="form-group">
+                    {{ form_row(form.Telephone) }}
+                </div>
+                <div class="form-group">
+                    {{ form_row(form.Email) }}
+                </div>
+                <div class="form-group">
+                    {{ form_row(form.Message) }}
+                </div>
+                <div class="form-group">
+                    {{ form_row(form.RGPD) }}
+                </div>
+                <button type="submit" value="Submit" class="btn btn-primary">Envoyer</button>
+
+            </div>
+        </div>
+    </div>
+    {{ form_end(form) }}
+    </body>
+
+{% endblock %}
