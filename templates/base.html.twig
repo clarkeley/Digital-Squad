@@ -8,6 +8,8 @@
                   integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
                   crossorigin="anonymous"/>
             <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="{{ asset('css/reference.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/blog.css') }}">
         {% endblock %}
         <style>
             .modal-full {
@@ -52,7 +54,7 @@
                             <a href="{{ path('blog') }}">NOTRE BLOG</a></br>
                             <a href="{{ path('contact') }}">NOUS CONTACTER</a></br>
 
-                            <a href="{{ path('catalog') }}" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Estimation en direct</a>
+                            <a href="{{ path('catalog') }}" class="button btn-secondary btn-lg active" role="button" aria-pressed="true">Estimation en direct</a>
                         </div>
                     </div>
                 </div>
@@ -62,7 +64,8 @@
 
 
 
-        {% block body %}{% endblock %}
+        {% block body %}
+        {% endblock %}
 
         {% block javascripts %}
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
