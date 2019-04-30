@@ -1,4 +1,152 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+    <body class="text-center">
+
+        <div class="container">
+
+            {#Devis en ligne#}
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Contenus graphiques
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            Nothing now
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="dev_choices">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Développement
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">WordPress <label for="wordpress"></label><input type="radio" OnClick="checkDevRadio();" id="wordpress"><br></h5>
+                                            <p class="card-text"><p>options :</p><br>
+                                            Logo    <label for="logo"></label><input type="checkbox" id="logo">
+                                            Charte Graphique <label for="graphicCharte"></label><input type="checkbox" id="graphicCharte"><br>
+                                            Hébergement     <label for="hebergement"></label><input type="checkbox" id="hebergement">
+                                            Maintenance <label for="maintenance"></label><input type="checkbox" id="maintenance">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Symfony <label for="symfony"></label><input type="radio" OnClick="checkDevRadio();" id="symfony"><br></h5>
+                                            <p class="card-text"><p>options :</p><br>
+                                            Logo    <label for="logo"></label><input type="checkbox" id="logo">
+                                            Charte Graphique <label for="graphicCharte"></label><input type="checkbox" id="graphicCharte"><br>
+                                            Hébergement     <label for="hebergement"></label><input type="checkbox" id="hebergement">
+                                            Maintenance <label for="maintenance"></label><input type="checkbox" id="maintenance"><br>
+                                            SEO <label for="seo"></label><input type="checkbox" id="seo">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Marketing & Ateliers
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            Blablalbalblablal
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-success" onclick="reset();" id="reset">
+                Reset
+            </button>
+
+            {#Estimation#}
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#quoteModal" id="estimate" onclick="estimate();">
+                Estimer
+            </button>
+            <div class="modal fade" id="quoteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Récapitulatif du devis</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body" id="recap">
+                            CHARGEMENT EN COUR...<br>
+                            <img src="{{ asset('loading.gif') }}" width="90" height="90" class="d-inline-block align-top" alt="loading">
+                        </div>
+                        <div class="modal-footer" id="price">
+                            Estimation :
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+
+    <script>
+        function checkDevRadio() {
+            let radioWordpress = document.getElementById("wordpress");
+            let radioSymfony = document.getElementById("symfony");
+
+            if (radioWordpress.checked) {
+                radioSymfony.disabled = true;
+            } if (radioSymfony.checked) {
+                radioWordpress.disabled = true;
+            }
+        }
+
+        function reset() {
+            let resetAll = document.getElementById("reset");
+            let radioWordpress = document.getElementById("wordpress");
+            let radioSymfony = document.getElementById("symfony");
+
+            resetAll.onclick = function () {
+                radioWordpress.checked = false;
+                radioWordpress.disabled = false;
+                radioSymfony.checked = false;
+                radioSymfony.disabled = false;
+            }
+        }
+        
+        function estimate() {
+            let estimation = document.getElementById("estimate");
+            let recapOptions = document.getElementById("recap");
+            let price = document.getElementById("price");
+
+            setTimeout(finishEstimate, 5000);
+            
+            function finishEstimate() {
+                recapOptions.innerHTML = "Voici les options ! :D";
+                price.innerText = "Estimation : 350€";
+            }
+        }
+    </script>
+
 {% endblock %}
