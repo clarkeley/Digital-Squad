@@ -36,25 +36,54 @@
                                 <div class="col-sm-6">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h5 class="card-title">WordPress <label for="wordpress"></label><input type="radio" OnClick="checkDevRadio();" id="wordpress"><br></h5>
+                                            <label class="btn btn-secondary">
+                                                WordPress <input type="radio" name="dev_choice" OnClick="checkDevRadio();" id="wordpress" autocomplete="off">
+                                            </label>
+
                                             <p class="card-text"><p>options :</p><br>
-                                            Logo    <label for="logo"></label><input type="checkbox" id="logo">
-                                            Charte Graphique <label for="graphicCharte"></label><input type="checkbox" id="graphicCharte"><br>
-                                            Hébergement     <label for="hebergement"></label><input type="checkbox" id="hebergement">
-                                            Maintenance <label for="maintenance"></label><input type="checkbox" id="maintenance">
+
+                                            <label>
+                                                Logo <input type="checkbox" checked data-toggle="toggle" data-onstyle="info" data-on="Oui" data-off="Non" id="option1_dev_wordpress" value="Logo" disabled>
+                                            </label><br>
+                                            <label>
+                                                Charte Graphique <input type="checkbox" checked data-toggle="toggle" data-onstyle="info" data-on="Oui" data-off="Non" id="option2_dev_wordpress" value="Charte Graphique" disabled>
+                                            </label><br>
+                                            <label>
+                                                Hébergement <input type="checkbox" checked data-toggle="toggle" data-onstyle="info" data-on="Oui" data-off="Non" id="option3_dev_wordpress" value="Hébergement" disabled>
+                                            </label><br>
+                                            <label>
+                                                Maintenance <input type="checkbox" checked data-toggle="toggle" data-onstyle="info" data-on="Oui" data-off="Non" id="option4_dev_wordpress" value="Maintenance" disabled>
+                                            </label><br>
+
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="col-sm-6">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h5 class="card-title">Symfony <label for="symfony"></label><input type="radio" OnClick="checkDevRadio();" id="symfony"><br></h5>
+                                            <label class="btn btn-secondary">
+                                                Symfony <input type="radio" name="dev_choice" OnClick="checkDevRadio();" id="symfony" autocomplete="off">
+                                            </label>
+
                                             <p class="card-text"><p>options :</p><br>
-                                            Logo    <label for="logo"></label><input type="checkbox" id="logo">
-                                            Charte Graphique <label for="graphicCharte"></label><input type="checkbox" id="graphicCharte"><br>
-                                            Hébergement     <label for="hebergement"></label><input type="checkbox" id="hebergement">
-                                            Maintenance <label for="maintenance"></label><input type="checkbox" id="maintenance"><br>
-                                            SEO <label for="seo"></label><input type="checkbox" id="seo">
+
+                                            <label>
+                                                Logo <input type="checkbox" checked data-toggle="toggle" data-onstyle="info" data-on="Oui" data-off="Non" id="option1_dev_symfony" value="Logo" disabled>
+                                            </label><br>
+                                            <label>
+                                                Charte Graphique <input type="checkbox" checked data-toggle="toggle" data-onstyle="info" data-on="Oui" data-off="Non" id="option2_dev_symfony" value="Charte Graphique" disabled>
+                                            </label><br>
+                                            <label>
+                                                Hébergement <input type="checkbox" checked data-toggle="toggle" data-onstyle="info" data-on="Oui" data-off="Non" id="option3_dev_symfony" value="Hébergement" disabled>
+                                            </label><br>
+                                            <label>
+                                                Maintenance <input type="checkbox" checked data-toggle="toggle" data-onstyle="info" data-on="Oui" data-off="Non" id="option4_dev_symfony" value="Maintenance" disabled>
+                                            </label><br>
+                                            <label>
+                                                SEO <input type="checkbox" checked data-toggle="toggle" data-onstyle="info" data-on="Oui" data-off="Non" id="option5_dev_symfony" value="SEO" disabled>
+                                            </label><br>
+
                                         </div>
                                     </div>
                                 </div>
@@ -79,7 +108,7 @@
             </div>
 
             <button type="button" class="btn btn-success" onclick="reset();" id="reset">
-                Reset
+                Reset du formulaire
             </button>
 
             {#Estimation#}
@@ -95,12 +124,13 @@
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body" id="recap">
-                            CHARGEMENT EN COUR...<br>
-                            <img src="{{ asset('loading.gif') }}" width="90" height="90" class="d-inline-block align-top" alt="loading">
+                        <div class="modal-body">
+                            <p id="recap_radio"></p>
+                            <p id="recap_options">CHARGEMENT EN COUR...<br>
+                                <img src="{{ asset('loading.gif') }}" width="90" height="90" class="d-inline-block align-top" alt="loading"></p>
                         </div>
                         <div class="modal-footer" id="price">
-                            Estimation :
+
                         </div>
                     </div>
                 </div>
@@ -115,10 +145,41 @@
             let radioWordpress = document.getElementById("wordpress");
             let radioSymfony = document.getElementById("symfony");
 
+            let checkLogoWordpress = document.getElementById("option1_dev_wordpress");
+            let checkLogoSymfony = document.getElementById("option1_dev_symfony");
+            let checkCharteWordpress = document.getElementById("option2_dev_wordpress");
+            let checkCharteSymfony = document.getElementById("option2_dev_symfony");
+            let checkHebergWordpress = document.getElementById("option3_dev_wordpress");
+            let checkHebergSymfony = document.getElementById("option3_dev_symfony");
+            let checkMaintenanceWordpress = document.getElementById("option4_dev_wordpress");
+            let checkMaintenanceSymfony = document.getElementById("option4_dev_symfony");
+            //let checkHebergWordpress = document.getElementById("option3_dev_wordpress");
+            let checkSeoSymfony = document.getElementById("option5_dev_symfony");
+
             if (radioWordpress.checked) {
+                checkLogoWordpress.disabled = false;
+                checkCharteWordpress.disabled = false;
+                checkHebergWordpress.disabled = false;
+                checkMaintenanceWordpress.disabled = false;
+
                 radioSymfony.disabled = true;
+                checkLogoSymfony.disabled = true;
+                checkCharteSymfony.disabled = true;
+                checkHebergSymfony.disabled = true;
+                checkMaintenanceSymfony.disabled = true;
+                checkSeoSymfony.disabled = true;
             } if (radioSymfony.checked) {
-                radioWordpress.disabled = true;
+                checkLogoWordpress.disabled = true;
+                checkCharteWordpress.disabled = true;
+                checkHebergWordpress.disabled = true;
+                checkMaintenanceWordpress.disabled = true;
+
+                radioSymfony.disabled = false;
+                checkLogoSymfony.disabled = false;
+                checkCharteSymfony.disabled = false;
+                checkHebergSymfony.disabled = false;
+                checkMaintenanceSymfony.disabled = false;
+                checkSeoSymfony.disabled = false;
             }
         }
 
@@ -132,19 +193,49 @@
                 radioWordpress.disabled = false;
                 radioSymfony.checked = false;
                 radioSymfony.disabled = false;
+
+                document.location.reload(true);
             }
         }
         
         function estimate() {
-            let estimation = document.getElementById("estimate");
-            let recapOptions = document.getElementById("recap");
+            let radioWordpress = document.getElementById("wordpress");
+            let radioSymfony = document.getElementById("symfony");
+            let recapRadio = document.getElementById("recap_radio");
+            let recapOptions = document.getElementById("recap_options");
             let price = document.getElementById("price");
+
+            /*const logo = "Logo";
+            const graphicChart = "Charte Graphique";
+            const lodging = "Hébergement";
+            const maintenance = "Maintenance";
+            const seo = "SEO";*/
 
             setTimeout(finishEstimate, 5000);
             
             function finishEstimate() {
-                recapOptions.innerHTML = "Voici les options ! :D";
-                price.innerText = "Estimation : 350€";
+                let checked = Array.prototype.slice.call(document.querySelectorAll("input[type='checkbox']:checked"));
+                //let checkRadio = document.querySelectorAll("input[type='radio']:checked");
+
+                if (radioWordpress.checked) {
+                    recapRadio.innerHTML = "Site WordPress";
+
+                    checked.forEach(function(cb){
+                        recapOptions.innerHTML = "Options :" + "<br>" + cb.value;
+                    });
+
+                    price.innerText = "Estimation : 800€";
+                }
+
+                if (radioSymfony.checked) {
+                    recapRadio.innerHTML = "Site Symfony";
+
+                    checked.forEach(function(cb){
+                        recapOptions.innerHTML = "Options :" + "<br>" + cb.value;
+                    });
+
+                    price.innerText = "Estimation : 1500€";
+                }
             }
         }
     </script>

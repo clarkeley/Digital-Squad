@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="350117c2-d442-4903-b3ae-45ecc5d40274" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CatalogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CatalogController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/index.html.twig" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/catalog.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/catalog.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/catalog/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/contact/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/portfolio/index.html.twig" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/catalog.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="143" column="12" lean-forward="true" selection-start-line="143" selection-start-column="12" selection-end-line="143" selection-end-column="12" />
+            <state relative-caret-position="391">
+              <caret line="89" column="34" lean-forward="true" selection-start-line="89" selection-start-column="34" selection-end-line="89" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -83,12 +77,12 @@
         <option value="$PROJECT_DIR$/templates/contact.html.twig" />
         <option value="$PROJECT_DIR$/src/Form/ContactType.php" />
         <option value="$PROJECT_DIR$/templates/home.html.twig" />
-        <option value="$PROJECT_DIR$/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/src/Form/FormHandler/QuoteTypeHandler.php" />
         <option value="$PROJECT_DIR$/src/Services/SwiftMailer.php" />
         <option value="$PROJECT_DIR$/src/Form/QuoteType.php" />
         <option value="$PROJECT_DIR$/src/Form/FormHandler/ContactTypeHandler.php" />
         <option value="$PROJECT_DIR$/src/Controller/CatalogController.php" />
+        <option value="$PROJECT_DIR$/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/templates/catalog.html.twig" />
       </list>
     </option>
@@ -215,7 +209,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -262,6 +255,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -307,7 +301,10 @@
       <workItem from="1556094703738" duration="959000" />
       <workItem from="1556270815241" duration="11602000" />
       <workItem from="1556291917577" duration="1652000" />
-      <workItem from="1556621155895" duration="10609000" />
+      <workItem from="1556621155895" duration="10728000" />
+      <workItem from="1556647701944" duration="7219000" />
+      <workItem from="1556693574336" duration="1336000" />
+      <workItem from="1556880980160" duration="4043000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1555067170347</created>
@@ -330,22 +327,37 @@
       <option name="project" value="LOCAL" />
       <updated>1555685825205</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add checkDevRadio, reset and estimate js fonction to catalog">
+      <created>1556633062360</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1556633062360</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48676000" />
+    <option name="totallyTimeSpent" value="61393000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2575" height="1413" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27355865" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2807157" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
-      <window_info anchor="bottom" id="Version Control" order="2" weight="0.23419204" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="2" visible="true" weight="0.23419204" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50139165" side_tool="true" weight="0.24043716" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32943013" />
@@ -353,8 +365,8 @@
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49860835" visible="true" weight="0.24043716" />
-      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49860835" weight="0.24043716" />
+      <window_info anchor="bottom" id="TODO" order="11" weight="0.32943013" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -429,7 +441,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Add Form-Handler &amp; Services fold, contactForm and view in progress" />
     <MESSAGE value="Add menu, footer to base.twig" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add menu, footer to base.twig" />
+    <MESSAGE value="Add checkDevRadio, reset and estimate js fonction to catalog" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add checkDevRadio, reset and estimate js fonction to catalog" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/templates/blog.html.twig">
@@ -575,15 +588,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="29" column="114" lean-forward="true" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="114" />
+        <state relative-caret-position="697">
+          <caret line="71" column="124" selection-start-line="71" selection-start-column="124" selection-end-line="71" selection-end-column="124" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/catalog.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="143" column="12" lean-forward="true" selection-start-line="143" selection-start-column="12" selection-end-line="143" selection-end-column="12" />
+        <state relative-caret-position="391">
+          <caret line="89" column="34" lean-forward="true" selection-start-line="89" selection-start-column="34" selection-end-line="89" selection-end-column="34" />
         </state>
       </provider>
     </entry>
