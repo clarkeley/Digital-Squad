@@ -37,7 +37,7 @@
                                     <div class="card">
                                         <div class="card-body">
                                             <label class="btn btn-secondary">
-                                                WordPress <input type="radio" name="dev_choice" OnClick="checkDevRadio();" id="wordpress" autocomplete="off">
+                                                WordPress <input type="radio" name="dev_choice" OnClick="checkDevButton();" id="wordpress" autocomplete="off">
                                             </label>
 
                                             <p class="card-text"><p>options :</p><br>
@@ -63,7 +63,7 @@
                                     <div class="card">
                                         <div class="card-body">
                                             <label class="btn btn-secondary">
-                                                Symfony <input type="radio" name="dev_choice" OnClick="checkDevRadio();" id="symfony" autocomplete="off">
+                                                Symfony <input type="radio" name="dev_choice" OnClick="checkDevButton();" id="symfony" autocomplete="off">
                                             </label>
 
                                             <p class="card-text"><p>options :</p><br>
@@ -141,7 +141,7 @@
     </body>
 
     <script>
-        function checkDevRadio() {
+        function checkDevButton() {
             let radioWordpress = document.getElementById("wordpress");
             let radioSymfony = document.getElementById("symfony");
 
