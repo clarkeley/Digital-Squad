@@ -43,16 +43,16 @@
                                             <p class="card-text"><p>options :</p><br>
 
                                             <label>
-                                                Logo <input type="checkbox" checked data-toggle="toggle" data-onstyle="info" data-on="Oui" data-off="Non" id="option1_dev_wordpress" value="Logo" disabled>
+                                                Logo <input type="checkbox" class="op" checked data-toggle="toggle" data-onstyle="info" data-on="Oui" data-off="Non" id="option1_dev_wordpress" value="300" name="Logo" disabled>
                                             </label><br>
                                             <label>
-                                                Charte Graphique <input type="checkbox" checked data-toggle="toggle" data-onstyle="info" data-on="Oui" data-off="Non" id="option2_dev_wordpress" value="Charte Graphique" disabled>
+                                                Charte Graphique <input type="checkbox" class="op" checked data-toggle="toggle" data-onstyle="info" data-on="Oui" data-off="Non" id="option2_dev_wordpress" value="400" name="Charte Graphique" disabled>
                                             </label><br>
                                             <label>
-                                                Hébergement <input type="checkbox" checked data-toggle="toggle" data-onstyle="info" data-on="Oui" data-off="Non" id="option3_dev_wordpress" value="Hébergement" disabled>
+                                                Hébergement <input type="checkbox" class="op" checked data-toggle="toggle" data-onstyle="info" data-on="Oui" data-off="Non" id="option3_dev_wordpress" value="150" name="Hébergement" disabled>
                                             </label><br>
                                             <label>
-                                                Maintenance <input type="checkbox" checked data-toggle="toggle" data-onstyle="info" data-on="Oui" data-off="Non" id="option4_dev_wordpress" value="Maintenance" disabled>
+                                                Maintenance <input type="checkbox" class="op" checked data-toggle="toggle" data-onstyle="info" data-on="Oui" data-off="Non" id="option4_dev_wordpress" value="200" name="Maintenance" disabled>
                                             </label><br>
 
                                         </div>
@@ -69,7 +69,7 @@
                                             <p class="card-text"><p>options :</p><br>
 
                                             <label>
-                                                Logo <input type="checkbox" checked data-toggle="toggle" data-onstyle="info" data-on="Oui" data-off="Non" id="option1_dev_symfony" value="Logo" disabled>
+                                                Logo <input type="checkbox" checked data-toggle="toggle" data-onstyle="info" data-on="Oui" data-off="Non" id="option1_dev_symfony" name="Logo" value="Logo" disabled>
                                             </label><br>
                                             <label>
                                                 Charte Graphique <input type="checkbox" checked data-toggle="toggle" data-onstyle="info" data-on="Oui" data-off="Non" id="option2_dev_symfony" value="Charte Graphique" disabled>
@@ -141,6 +141,8 @@
     </body>
 
     <script>
+        for(let i of document.querySelectorAll('[type=checkbox]')) { i.checked = false; }
+
         function checkDevButton() {
             let radioWordpress = document.getElementById("wordpress");
             let radioSymfony = document.getElementById("symfony");
@@ -201,40 +203,49 @@
         function estimate() {
             let radioWordpress = document.getElementById("wordpress");
             let radioSymfony = document.getElementById("symfony");
+
             let recapRadio = document.getElementById("recap_radio");
             let recapOptions = document.getElementById("recap_options");
             let price = document.getElementById("price");
 
-            /*const logo = "Logo";
-            const graphicChart = "Charte Graphique";
-            const lodging = "Hébergement";
-            const maintenance = "Maintenance";
-            const seo = "SEO";*/
-
             setTimeout(finishEstimate, 5000);
             
             function finishEstimate() {
-                let checked = Array.prototype.slice.call(document.querySelectorAll("input[type='checkbox']:checked"));
-                //let checkRadio = document.querySelectorAll("input[type='radio']:checked");
+                let array = "";
+                let total = 0;
+                let checked = document.querySelectorAll("input[type='checkbox']:checked");
+                let nameOf = document.querySelectorAll(".op");
 
                 if (radioWordpress.checked) {
                     recapRadio.innerHTML = "Site WordPress";
 
-                    checked.forEach(function(cb){
-                        recapOptions.innerHTML = "Options :" + "<br>" + cb.value;
-                    });
+                    for (let i = 0; i < nameOf.length; i++) {
+                        if (nameOf[i].checked === true) {
+                            array += nameOf[i].name + "<br>";
+                        }
+                        recapOptions.innerHTML = "Options :" + "<br>" + array;
+                    }
 
-                    price.innerText = "Estimation : 800€";
+                    for (let i = 0; i < checked.length; i++) {
+                        if (checked[i].checked === true) {
+                            total += parseFloat(checked[i].value);
+                    }
+                        price.innerHTML = "Estimation : " + total + "€";
+                    }
+
                 }
 
                 if (radioSymfony.checked) {
                     recapRadio.innerHTML = "Site Symfony";
 
-                    checked.forEach(function(cb){
-                        recapOptions.innerHTML = "Options :" + "<br>" + cb.value;
-                    });
+                    for (let i = 0; i < checked.length; i++) {
+                        if (checked[i].checked === true) {
+                            array += checked[i].value + "<br>";
+                        }
+                        recapOptions.innerHTML = "Options :" + "<br>" + array;
+                    }
 
-                    price.innerText = "Estimation : 1500€";
+                    price.innerText = "Estimation : 1800€";
                 }
             }
         }
