@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="350117c2-d442-4903-b3ae-45ecc5d40274" name="Default Changelist" comment="">
+    <list default="true" id="350117c2-d442-4903-b3ae-45ecc5d40274" name="Default Changelist" comment="Upgrade estimate function Recap+totalPrice">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/catalog.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/catalog.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/catalog.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="208" column="57" selection-start-line="208" selection-start-column="57" selection-end-line="208" selection-end-column="57" />
+            <state relative-caret-position="641">
+              <caret line="344" column="69" selection-start-line="344" selection-start-column="69" selection-end-line="344" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -208,6 +209,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -254,7 +256,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -305,7 +306,8 @@
       <workItem from="1556693574336" duration="1336000" />
       <workItem from="1556880980160" duration="4334000" />
       <workItem from="1556893282525" duration="243000" />
-      <workItem from="1557146824965" duration="6926000" />
+      <workItem from="1557146824965" duration="7149000" />
+      <workItem from="1557226388580" duration="13695000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1555067170347</created>
@@ -349,11 +351,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556885556493</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Upgrade estimate function Recap+totalPrice">
+      <created>1557153977627</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1557153977627</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68853000" />
+    <option name="totallyTimeSpent" value="82771000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -366,14 +375,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2575" height="1413" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2854871" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28787276" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
-      <window_info anchor="bottom" id="Version Control" order="2" weight="0.23419204" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="2" visible="true" weight="0.23419204" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50139165" side_tool="true" weight="0.24043716" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32943013" />
@@ -460,7 +468,8 @@
     <MESSAGE value="Add checkDevRadio, reset and estimate js fonction to catalog" />
     <MESSAGE value="Modifs radio &amp; checkbox design button, add checkbox to checkdev function" />
     <MESSAGE value="Rename checkDevRadio function to checkDevButton" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rename checkDevRadio function to checkDevButton" />
+    <MESSAGE value="Upgrade estimate function Recap+totalPrice" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upgrade estimate function Recap+totalPrice" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/templates/blog.html.twig">
@@ -583,20 +592,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="71" column="124" selection-start-line="71" selection-start-column="124" selection-end-line="71" selection-end-column="124" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/catalog.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="208" column="57" selection-start-line="208" selection-start-column="57" selection-end-line="208" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/CatalogController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -615,6 +610,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="74" column="18" lean-forward="true" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/catalog.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="641">
+          <caret line="344" column="69" selection-start-line="344" selection-start-column="69" selection-end-line="344" selection-end-column="69" />
         </state>
       </provider>
     </entry>
