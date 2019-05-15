@@ -112,22 +112,22 @@
                                             <p class="card-text"><p>options :</p><br>
 
                                             <label>
-                                                Logo <input type="checkbox" checked data-toggle="toggle" data-onstyle="info" data-on="Oui" data-off="Non" id="option1_dev_symfony" name="Logo" value="450" disabled>
+                                                Logo <input type="checkbox" class="op" checked data-toggle="toggle" data-onstyle="info" data-on="Oui" data-off="Non" id="option1_dev_symfony" name="Logo" value="450" disabled>
                                             </label><br>
                                             <label>
-                                                Charte Graphique <input type="checkbox" checked data-toggle="toggle" data-onstyle="info" data-on="Oui" data-off="Non" id="option2_dev_symfony" name="Charte Graphique" value="1250" disabled>
+                                                Charte Graphique <input type="checkbox" class="op" checked data-toggle="toggle" data-onstyle="info" data-on="Oui" data-off="Non" id="option2_dev_symfony" name="Charte Graphique" value="1250" disabled>
                                             </label><br>
                                             <label>
-                                                Hébergement <input type="checkbox" checked data-toggle="toggle" data-onstyle="info" data-on="Oui" data-off="Non" id="option3_dev_symfony" name="Hébergement" value="75" disabled>
+                                                Hébergement <input type="checkbox" class="op" checked data-toggle="toggle" data-onstyle="info" data-on="Oui" data-off="Non" id="option3_dev_symfony" name="Hébergement" value="75" disabled>
                                             </label><br>
                                             <label>
-                                                Maintenance <input type="checkbox" checked data-toggle="toggle" data-onstyle="info" data-on="Oui" data-off="Non" id="option4_dev_symfony" name="Maintenance" value="450" disabled>
+                                                Maintenance <input type="checkbox" class="op" checked data-toggle="toggle" data-onstyle="info" data-on="Oui" data-off="Non" id="option4_dev_symfony" name="Maintenance" value="450" disabled>
                                             </label><br>
                                             <label>
-                                                SEO <input type="checkbox" checked data-toggle="toggle" data-onstyle="info" data-on="Oui" data-off="Non" id="option5_dev_symfony" name="SEO" value="300" disabled>
+                                                SEO <input type="checkbox" class="op" checked data-toggle="toggle" data-onstyle="info" data-on="Oui" data-off="Non" id="option5_dev_symfony" name="SEO" value="300" disabled>
                                             </label><br>
                                             <label>
-                                                Back Office <input type="checkbox" checked data-toggle="toggle" data-onstyle="info" data-on="Oui" data-off="Non" id="option6_dev_symfony" name="Back Office" value="480" disabled>
+                                                Back Office <input type="checkbox" class="op" checked data-toggle="toggle" data-onstyle="info" data-on="Oui" data-off="Non" id="option6_dev_symfony" name="Back Office" value="480" disabled>
                                             </label><br>
 
                                         </div>
@@ -298,46 +298,46 @@
                 let checked = document.querySelectorAll("input[type='checkbox']:checked");
                 let nameOf = document.querySelectorAll(".op");
 
-                if (radioWordpress.checked) {
-                    recapRadio.innerHTML = "Site WordPress";
+                if (radioWordpress.checked || radioSymfony.checked) {
+                    if (radioWordpress.checked) {
+                        recapRadio.innerHTML = "Site WordPress";
 
-                    for (let i = 0; i < nameOf.length; i++) {
-                        if (nameOf[i].checked === true) {
-                            array += nameOf[i].name + "<br>";
+                        for (let i = 0; i < nameOf.length; i++) {
+                            if (nameOf[i].checked === true) {
+                                array += nameOf[i].name + "<br>";
+                            }
+                            recapOptions.innerHTML = "Options :" + "<br>" + array;
                         }
-                        recapOptions.innerHTML = "Options :" + "<br>" + array;
+
+                        for (let i = 0; i < checked.length; i++) {
+                            if (checked[i].checked === true) {
+                                totalWp += parseFloat(checked[i].value);
+
+                                price.innerHTML = "Estimation : " + totalWp + "€";
+                            }
+                        }
+                        price.innerHTML = "Estimation : " + totalWp + "€";
+
                     }
 
-                    for (let i = 0; i < checked.length; i++) {
-                        if (checked[i].checked === true) {
-                            totalWp += parseFloat(checked[i].value);
+                    if (radioSymfony.checked) {
+                        recapRadio.innerHTML = "Site Symfony";
 
-                            price.innerHTML = "Estimation : " + totalWp + "€";
+                        for (let i = 0; i < nameOf.length; i++) {
+                            if (nameOf[i].checked === true) {
+                                array += nameOf[i].name + "<br>";
+                            }
+                            recapOptions.innerHTML = "Options :" + "<br>" + array;
                         }
-                    }
-                    price.innerHTML = "Estimation : " + totalWp + "€";
 
-                }
-
-                if (radioSymfony.checked) {
-                    recapRadio.innerHTML = "Site Symfony";
-
-                    for (let i = 0; i < nameOf.length; i++) {
-                        if (nameOf[i].checked === true) {
-                            array += nameOf[i].name + "<br>";
-                        }
-                        recapOptions.innerHTML = "Options :" + "<br>" + array;
-                    }
-
-                    for (let i = 0; i < checked.length; i++) {
-                        if (checked[i].checked === true) {
-                            totalSf += parseFloat(checked[i].value);
+                        for (let i = 0; i < checked.length; i++) {
+                            if (checked[i].checked === true) {
+                                totalSf += parseFloat(checked[i].value);
+                            }
+                            price.innerHTML = "Estimation : " + totalSf + "€";
                         }
                         price.innerHTML = "Estimation : " + totalSf + "€";
-                    }
-                    price.innerHTML = "Estimation : " + totalSf + "€";
-                }
-
+                }}else {
                     for (let i = 0; i < nameOf.length; i++) {
                         if (nameOf[i].checked === true) {
                             array += nameOf[i].name + "<br>";
@@ -351,6 +351,8 @@
                         }
                         price.innerHTML = "Estimation : " + total + "€";
                     }
+                }
+
             }
         }
     </script>

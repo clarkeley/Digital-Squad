@@ -19,25 +19,53 @@ class ContactType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options){
         $builder
-            ->add('Nom', TextType::class)
-            ->add('Prenom', TextType::class)
-            ->add('Societe', TextType::class)
-            ->add('Objet', ChoiceType::class, [
-                'choices' => [
-                    'Devis' => 01,
-                    'Contact' => 02,
-                    'Autre' => 03
+            ->add('Nom', TextType::class, [
+                'label' => false,
+                'attr' => [
+                    'placeholder' => "Nom",
+                    'class' => 'form-border'
                 ]
             ])
-            ->add('Telephone', NumberType::class)
+            ->add('Societe', TextType::class, [
+                'label' => false,
+                'attr' => [
+                    'placeholder' => "Société",
+                    'class' => 'form-border'
+                ]
+            ])
+            ->add('Objet', TextType::class, [
+                'label' => false,
+                'attr' => [
+                    'placeholder' => "Objet",
+                    'class' => 'form-border'
+                ]
+            ])
+            ->add('Telephone', NumberType::class, [
+                'label' => false,
+                'attr' => [
+                    'placeholder' => "Téléphone",
+                    'class' => 'form-border'
+                ]
+            ])
             ->add('Email', EmailType::class, [
+                'label' => false,
                 'constraints' => [
                     new Email()
+                ],
+                'attr' => [
+                    'placeholder' => "Email",
+                    'class' => 'form-border'
                 ]
             ])
-            ->add('Message', TextareaType::class)
+            ->add('Message', TextareaType::class, [
+                'label' => false,
+                'attr' => [
+                    'placeholder' => "Ecrivez votre message...",
+                    'class' => 'form-border'
+                ]
+            ])
             ->add('RGPD', CheckboxType::class, [
-                'label' => "En soumettant ce formulaire, j'accèpte que mes données puissent être utilisées à des fins commerciales.",
+                'label' => "En soumettant ce formulaire, j'accèpte que les informations saisies soient utilisées dans le cadre de ma demande d'informations. ",
                 'required' => true
             ]);
     }
