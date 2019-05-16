@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'coolvetica';
+    src: url("../fonts/coolvetica/coolvetica.ttf") format('truetype');
+}
+
+/** HOME CSS  **/
+
+
+.page-title{
+    font-family: 'coolvetica', 'sans-serif';
+    font-size: 6em;
+    color: white;
+}
+
+.page-second-title{
+    font-family: 'Lato', 'sans-serif';
+    font-size: 2em;
+    color: white;
+}
+
+.page-title-mobile{
+    font-family: 'Coolvetica';
+    font-size: 4em;
+}
+
+
+
+.btn-cta{
+    background: #E71D36;
+    color: white;
+    font-family: 'Lato', 'sans-serif';
+    border-radius: 8px;
+    font-size: 22px;
+    padding: 9px 23px 9px 23px;
+    box-shadow: 4px 7px 11px -1px rgba(0,0,0,0.75);
+}
+
+.btn-cta:hover{
+    color: #011627;
+}
+
+.homeCoverImg {
+    height: 100vh;
+    position: relative;
+    background-image: url("../img/home/cover.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.coverTextMobile {
+    position: absolute;
+    bottom: 15%;
+    text-align: center
+
+}
+
+.centeredDiv {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 890px;
+    height: 100px;
+    border-radius: 3px;
+}
+
+.section-presentation {
+    background-color: #2EC4B6;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 100;
+    font-family: 'Lato';
+}
+
+.redWord{
+    color: #E71D36;
+}
+
+.iconographie{
+    background-color: #FDFFFC;
+}
+
+.btn-cta1{
+    background-color: #FF9F1C;
+    color: white;
+    font-family: 'Lato';
+    padding: 9px 22px 9px 22px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    box-shadow: 4px 7px 11px -1px rgba(0,0,0,0.75);
+}
+
+.btn-cta1:hover{
+    color: #011627;
+}
+
+.cta1 {
+    height: 56vh;
+    width: 650px;
+    background-image: url("../img/home/cta1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 4px 7px 11px -1px rgba(0,0,0,0.75);
+}
+
+.cta1 div {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.cta2 {
+    height: 56vh;
+    width: 650px;
+    background-image: url("../img/home/cta2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 4px 7px 11px -1px rgba(0,0,0,0.75);
+}
+
+.cta2 div {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.section-team {
+    background-color: #2EC4B6;
+    color: white;
+}
+
+.teamCard {
+
+    background-color: white;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.bodyCard {
+    min-height: 8em;
+    background-color: #E71D36;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.bodyCard p {
+
+}
+
+/** FOOTER **/
+
+.footerElt {
+    padding: 15px;
+    background-color: #011627;
+    color: white;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.phoneNumber{
+    font-family: 'Lato', 'sans-serif';
+    font-size: 1.2em;
+}
+
+.copyright {
+    background-color: #011627;
+    padding: 20px;
+    font-family: 'Lato' ,'sans-serif';
+    font-size: 1em;
+    color: white;
+    border-top: white 1px solid;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.siteMap {
+    background-color: #011627;
+    padding: 10px;
+    font-family: 'Lato' ,'sans-serif';
+    font-size: 1em;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    color: white;
+    border-top: white 1px solid;
+}
+
+.nav-link {
+    color: white!important;
+    text-transform: uppercase;
+}
+
+.btn-footer{
+    background-color: #FF9F1C;
+    padding: 9px 25px 9px 25px;
+    font-family: 'Lato' ,'sans-serif';
+    font-size: 1.3em;
+    border-radius: 8px;
+    box-shadow: 4px 7px 11px -1px rgba(0,0,0,0.75);
+}
+

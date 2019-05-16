@@ -8,8 +8,11 @@
                   integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
                   crossorigin="anonymous"/>
             <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+            <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
             <link rel="stylesheet" href="{{ asset('css/reference.css') }}">
             <link rel="stylesheet" href="{{ asset('css/blog.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+            <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         {% endblock %}
         <style>
             .modal-full {
@@ -26,10 +29,11 @@
 
     </head>
     <body>
+        <a id="haut"></a>
         {#Menu#}
-        <nav class="navbar sticky-top pull-right" data-toggle="modal" data-target=".bd-example-modal-lg">
+        <nav class="navbar sticky-top pull-right mt-5 mr-3" data-toggle="modal" data-target=".bd-example-modal-lg">
             <a class="navbar-brand" href="#">
-                <img src="{{ asset('menu.png') }}" width="30" height="30" class="d-inline-block align-top" alt="">
+                <img src="{{ asset('img/Menu_burger.png') }}" width="45" height="45" class="d-inline-block align-top" alt="">
             </a>
         </nav>
         <div class="container">
@@ -47,7 +51,7 @@
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body text-center">
                             <a href="{{ path('home') }}">ACCUEIL</a></br>
                             <a href="{{ path('catalog') }}">NOS SERVICES</a></br>
                             <a href="{{ path('portfolio') }}">NOS CLIENT</a></br>
@@ -60,48 +64,101 @@
                 </div>
             </div>
         </div>
-
-
-
-
+        <img src="{{ asset('img/infini_1.png') }}" style="position: absolute; z-index: 1;" class="ml-1 p-3 img-fluid">
         {% block body %}
         {% endblock %}
 
         {% block javascripts %}
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         {% endblock %}
 
+
+
+
         {#Footer#}
-        <footer class="page-footer ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
-                        <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
-                        <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
-                    </div>
+        {#<footer class="page-footer ">#}
+            {#<div class="container">#}
+                {#<div class="row">#}
+                    {#<div class="col-lg-12">#}
+                        {#<i class="fa fa-instagram fa-3x" aria-hidden="true"></i>#}
+                        {#<i class="fa fa-twitter fa-3x" aria-hidden="true"></i>#}
+                        {#<i class="fa fa-facebook fa-3x" aria-hidden="true"></i>#}
+                    {#</div>#}
+                {#</div>#}
+                {#<div class="col-md-6 mb-4">#}
+                        {#<img src="{{ asset('infini4.png') }}" width="300" height="200" alt="">#}
+                {#</div>#}
+                {#<div class="col-md-6 mb-4">#}
+                    {#<p>+01 02 03 04 05</p>#}
+                {#</div>#}
+                {#<div class="col-md-6 mb-4">#}
+                    {#<a href="{{ path('contact') }}" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Contactez-nous !</a>#}
+                {#</div>#}
+                {#<div class="col-md-6 mb-4">#}
+                    {#<form class="form-inline">#}
+                        {#<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">#}
+                        {#<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>#}
+                    {#</form>#}
+                {#</div>#}
+            {#</div>#}
+            {#<div class="footer-copyright text-center py-3">© 2019 Copyright:#}
+                {#<a href="#"> DigitalSquad</a>#}
+            {#</div>#}
+        {#</footer>#}
+
+
+
+    <footer class="page-footer text-center">
+        <div class="footerElt">
+            <div class="row">
+                <div class=" mr-5 offset-lg-11">
+                    <a href="#haut"><img src="{{ asset('img/up-chevron.png') }}"  style="height:33px; width: 33px"></a>
                 </div>
-                <div class="col-md-6 mb-4">
-                        <img src="{{ asset('infini4.png') }}" width="300" height="200" alt="">
-                </div>
-                <div class="col-md-6 mb-4">
-                    <p>+01 02 03 04 05</p>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <a href="{{ path('contact') }}" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Contactez-nous !</a>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <form class="form-inline">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-                </div>
+            <div class="col-lg-4">
+                <span class="mr-3"><img src="{{ asset('img/infini_1.png') }}" width="160" height="110" class="mb-2 mr-5 img-fluid"></span>
+                <span class="mt-5 phoneNumber" >+33(0) 2 33 04 05</span>
             </div>
-            <div class="footer-copyright text-center py-3">© 2019 Copyright:
-                <a href="#"> DigitalSquad</a>
+           <div class="col-lg-4">
+               <div><a class="btn btn-footer mt-4">Contactez-nous !</a> </div>
+           </div>
+            <div class="col-lg-4 mt-4">
+               <span>
+                   <a href="#"><img src="{{ asset('img/social/instagram.svg') }}" class="img-fluid mr-3" style="height:25px; width: 25px"></a>
+               </span>
+                <span>
+                   <a href="#"><img src="{{ asset('img/social/twitter.svg') }}" class="img-fluid mr-2" style="height:25px; width: 25px"></a>
+               </span>
+                <span>
+                   <a href="#"><img src="{{ asset('img/social/facebook.svg') }}" class="img-fluid" style="height:25px; width: 25px"></a>
+               </span>
             </div>
-        </footer>
+            </div>
+        </div>
+        <div class="siteMap text-center d-none d-sm-block">
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nos Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nos Clients</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Notre blog </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nous contacter</a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright"> © 2019 Digital Squad - Tous droits réservés.</div>
+    </footer>
     </body>
 </html>
+
+
+
