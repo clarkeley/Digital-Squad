@@ -14,7 +14,16 @@ class ReferenceController extends AbstractController
      */
     public function Index()
     {
-        return $this->render('reference.html.twig');
+        return $this->render('references/reference.html.twig');
+    }
+
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     * @Route("/references/Louvre", name="reference.louvre")
+     */
+    public function showReferenceOne()
+    {
+        return $this->render('references/Louvre.html.twig');
     }
 
 }
