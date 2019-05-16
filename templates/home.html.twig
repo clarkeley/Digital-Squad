@@ -1,7 +1,121 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <body class="text-center">
-        <p>Test de la page home</p>
-    </body>
+    <div class="homeCoverImg d-none d-sm-block">
+        <div class="text-center centeredDiv">
+            <h1 class="align-middle page-title">Digital Squad</h1>
+            <h5 class="page-second-title col-lg-12 mt-5">Budgétisez votre projet digital Symfony ou Wordpress, communiquez sur votre
+                marque, votre agence Digital Squad vous propose un devis en ligne.</h5>
+            <a href="#" class="btn btn-cta mt-4">Faites appel à nous ! </a>
+        </div>
+    </div>
+    <div class="homeCoverImg d-block d-sm-none">
+        <div class="coverTextMobile offset-lg-2 col-lg-8">
+            <h1 class="pb-5 page-title-mobile">Digital Squad</h1>
+            <h6>Budgétisez votre projet digital Symfony ou Wordpress, communiquez sur votre
+                marque, votre agence Digital Squad vous propose un devis en ligne.</h6>
+            <a href="#" class="btn btn-cta mt-5">Faites appel à nous ! </a>
+        </div>
+    </div>
+
+    <div class="section-presentation">
+    <div class="container">
+        <div class="row">
+            <div class="offset-lg-1 col-lg-10">
+            <h2 class="text-center mt-5 ">QUI SOMMES NOUS ?</h2>
+                <div class="text-center"><img src="{{ asset('img/Groupe_40.png') }}" width="60"></div>
+                <div class="text-center mb-3 mt-3"><img src="{{ asset('img/qui_sommes_nous.png') }}" width="90"></div>
+
+            <p class="mb-5">Nous sommes des jeunes diplômés qui vous proposons d’exprimer nos talents en
+                design, marketing, développement et gestion de projet. Vous pourrez construire votre
+                identité visuelle, améliorez votre marketing de contenu et conduire une stratégie digitale
+                pour conquérir de nouveaux clients.</p>
+            <h2 class="text-center mb-5 mt-2 offset-lg-1 col-lg-10">Faites <span class="redWord">confiance</span> à votre nouvelle agence formée aux technologies d’aujourd’hui !</h2>
+            <p class="mb-3">  Notre catalogue de services est orienté principalement vers le design UX et UI, la
+                création de maquette et de contenus visuels (logo, email, charte graphique).
+            </p>
+            <p class="mb-5"> Vous pouvez profiter également de notre savoir faire en développement de site web
+                aussi bien avec le CMS Wordpress que le framework Symfony et d’une stratégie
+                marketing pour la communication sur votre marque en créant un marketing de contenu
+                avec des rédactions d’articles orientés SEO.</p>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="iconographie mt-5 container-fluid">
+    <div class="row">
+        <div class="cta1 offset-lg-1 col-lg-5  offset-1 col-10 offset-1 mr-3 ">
+            <div class="text-center"><a  href="#" class="btn btn-cta1">Découvrez nos services</a> </div>
+        </div>
+
+        <div class="cta2  offset-lg-0 col-lg-5 offset-1 col-10 mt-5 mb-5  ">
+            <div class="text-center"><a  href="#" class="btn btn-cta1">Découvrez nos références</a> </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="section-team pt-5 pb-5">
+
+<div class="container">
+    <h2 class="text-center">NOTRE EQUIPE</h2>
+    <div class="text-center"><img src="{{ asset('img/Groupe_41.png') }}" width="60"></div>
+    <div class="text-center mb-3 mt-3 mb-2"><img src="{{ asset('img/team.png') }}" width="90"></div>
+    <div class="text-center"><h5>Apprennez en plus sur les membres de l'équipe.</h5></div>
+    <div class="row mt-5">
+
+        <div class="offset-lg-2 col-lg-4 offset-1 col-10 mt-4">
+            <div class="teamCard text-center">
+                <img src="{{ asset('img/rond.png') }}" class="img-fluid mt-5 mb-3" width="150em">
+                <div class="p-4">Team member</div>
+            </div>
+            <div class="bodyCard">
+                <p class="text-center p-5">Graphisme</p>
+            </div>
+        </div>
+
+        <div class="col-lg-4 offset-lg-0 offset-1 col-10 mt-4">
+            <div class="teamCard text-center">
+                <img src="{{ asset('img/rond.png') }}" class="img-fluid mt-5 mb-3" width="150em">
+                <div class="p-4">Team Member</div>
+            </div>
+            <div class="bodyCard">
+                <p class="text-center p-5"> Développement</p>
+            </div>
+        </div>
+
+        <div class="offset-lg-2 col-lg-4 offset-1 col-10 mt-4">
+            <div class="teamCard text-center">
+                <img src="{{ asset('img/rond.png') }}" class="img-fluid mt-5 mb-3" width="150em">
+                <div class="p-4">Team member</div>
+            </div>
+            <div class="bodyCard">
+                <p class="text-center p-5">Marketing</p>
+            </div>
+        </div>
+
+        <div class="col-lg-4 offset-lg-0 offset-1 col-10 mt-4">
+            <div class="teamCard text-center">
+                <img src="{{ asset('img/rond.png') }}" class="img-fluid mt-5 mb-3" width="150em">
+                <div class="p-4">Team Member</div>
+            </div>
+            <div class="bodyCard">
+                <p class="text-center p-5"> Développement Back</p>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
 {% endblock %}
+
+
