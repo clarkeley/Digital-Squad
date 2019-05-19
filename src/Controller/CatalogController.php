@@ -12,26 +12,6 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class CatalogController extends AbstractController
 {
-    /*private $formHandler;
-    private $formFactory;
-
-    public function __construct(QuoteTypeHandler $handler, QuoteType $formFactory)
-    {
-        $this->formHandler = $handler;
-        $this->formFactory = $formFactory;
-    }
-
-    public function __invoke(Request $request): Response
-    {
-        $form = $this->createForm(QuoteType::class);
-        $form->handleRequest($request);
-
-        if ($this->formHandler->handle($form)){
-            return $this->redirectToRoute('catalog');
-        }
-
-        return $this->render('catalog.html.twig', array('form' => $form->createView()));
-    }*/
     /**
      * @Route("/catalog", name="catalog")
      */

@@ -1,0 +1,62 @@
+/** REFERENCES CSS  **/
+
+.coverImgRef {
+    height: 705px;
+    position: relative;
+    background-image: url("../img/references/reference.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.coverImgRef h1{
+    font-family: 'coolvetica';
+    font-size: 70px;
+}
+
+.coverImgRef h6{
+    font-family: 'Lato';
+    font-size: 27px;
+}
+
+.coverText {
+    position: absolute;
+    bottom: 30%;
+    text-align: center
+
+}
+
+.referenceText h3{
+    font-family: 'Lato';
+    font-size: 28px;
+    background-color: #FDFFFC;
+}
+
+.referenceText p{
+    font-family: 'Lato';
+    font-size: 21px;
+}
+
+
+
+.references {
+    background-color: #2EC4B6;
+    margin-top: 50px;
+    padding-top: 40px;
+    color: white;
+    font-family: 'Lato';
+}
+
+.imgRef:hover {
+    opacity: 0.6;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    transition:  all 0.3s;
+}
+
+
+
+
+
+
+

@@ -1,16 +1,65 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <body class="text-center">
 
+    <div class="coverImgCatalog">
+        <div class="coverText offset-lg-2 col-lg-8">
+            <h1>Nos services</h1>
+            <h6>Un catalogue pour répondre à tous vos projets</h6>
+        </div>
+    </div>
+
+    {#Catalogue#}
+    <div class="section-presentation">
         <div class="container">
+            <div class="row">
+                <div class="offset-lg-1 col-lg-10">
+                    <h2 class="text-center mt-5 ">NOS OFFRES</h2>
+                    <div class="text-center">
+                        <img src="{{ asset('img/Groupe_40.png') }}" width="60">
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="text-center img-presentation">
+            <picture>
+                <source media="(max-width: 799px)" srcset="{{ asset('img/catalog/iconographie_mobile.png') }}">
+                <source media="(min-width: 800px)" srcset="{{ asset('img/catalog/iconographie.png') }}">
+                <img src="img/{{ asset('img/catalog/iconographie.png') }}">
+            </picture>
+        </div>
+
+        <div class="container text-center text-linkSize">
+            <h6>Pour plus de détails, vous pouvez télécharger notre <a href="{{ asset('documents/catalogue.pdf') }}" download="Catalogue" class="link-catalog">catalogue ici.</a></h6>
+        </div>
+    </div>
+
+    {#Bloc DEVIS#}
+    <div class="container">
+        <h2 class="text-center mt-5">DEVIS EN LIGNE</h2>
+
+        <div class="text-center mt-3">
+            <img src="{{ asset('img/Groupe_41.png') }}" width="60">
+        </div><br>
+
+        <div class="text-center mt-4">
+            <h5>Votre agence professionelle et pragmatique vous propose des sites créatifs sur mesure.<br><br>
+                Choisissez les options qui vous conviennent (thèmes ou charte graphique personnalisée, optimisation du référencement naturel, campagne de promotion...). Demandez à créer une identité visuelle pour vos sites vitrines<br>
+                pour PME et fidélisez votre communauté autour d'une appartenance à une marque.<br><br>
+                Développeurs, sous traitez également la partie design pour créer une identité forte pour vos clients. Et pour une Start<br>
+                Up ambitieuse ne disposant pas encore d'une équipe en charge du design, confiez vos besoins à Digital Squad !
+            </h5>
+        </div>
+    </div>
+
+        <div class="container mt-5">
             {#Devis en ligne#}
             <div id="accordion">
                 <div class="card">
-                    <div class="card-header" id="headingOne">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="graph_choices">
+                    <div class="card-header collapse-color" id="headingOne">
+                        <h5 class="mb-0 text-center">
+                            <button class="btn btn-link collapse-text" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="graph_choices">
                                 Contenus graphiques
                             </button>
                         </h5>
@@ -21,7 +70,9 @@
                             <div class="row">
                                 <div class="col-sm-3">
                                     <label class="card-body">
-                                        Landing Page <input type="checkbox" class="op" checked data-toggle="toggle" data-onstyle="info" data-on="Oui" data-off="Non" name="Landing Page" id="option1_graph_landing" value="499">
+                                        <label class="text-center">
+                                        Landing Page<input type="checkbox" class="op" checked data-toggle="toggle" data-onstyle="info" data-on="Oui" data-off="Non" name="Landing Page" id="option1_graph_landing" value="499">
+                                        </label>
                                     </label>
                                 </div>
 
@@ -66,16 +117,16 @@
                     </div>
                 </div>
                 <div class="card" id="dev_choices">
-                    <div class="card-header" id="headingTwo">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <div class="card-header collapse-color" id="headingTwo">
+                        <h5 class="mb-0 text-center">
+                            <button class="btn btn-link collapsed collapse-text" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 Développement
                             </button>
                         </h5>
                     </div>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                         <div class="card-body">
-                            <div class="row">
+                            <div class="row text-center">
                                 <div class="col-sm-6">
                                     <div class="card">
                                         <div class="card-body">
@@ -138,9 +189,9 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-header" id="headingThree">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <div class="card-header collapse-color" id="headingThree">
+                        <h5 class="mb-0 text-center">
+                            <button class="btn btn-link collapsed collapse-text" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                 Marketing & Ateliers
                             </button>
                         </h5>
@@ -185,30 +236,32 @@
                 </div>
             </div>
 
-            <button type="button" class="btn btn-success" onclick="reset();" id="reset">
-                Reset du formulaire
-            </button>
+            <div class="container mt-5 button-group text-center">
+                <button type="button" class="btn btn-success btn-lg button-reset" onclick="reset();" id="reset">
+                    Reset du formulaire
+                </button>
 
-            {#Estimation#}
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#quoteModal" id="estimate" onclick="estimate();">
-                Estimer
-            </button>
-            <div class="modal fade" id="quoteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Récapitulatif du devis</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <p id="recap_radio"></p>
-                            <p id="recap_options">CHARGEMENT EN COUR...<br>
-                                <img src="{{ asset('loading.gif') }}" width="90" height="90" class="d-inline-block align-top" alt="loading"></p>
-                        </div>
-                        <div class="modal-footer" id="price">
+                {#Estimation#}
+                <button type="button" class="btn btn-primary btn-lg button-estimate" data-toggle="modal" data-target="#quoteModal" id="estimate" onclick="estimate();">
+                    Estimer
+                </button>
+                <div class="modal fade" id="quoteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Récapitulatif du devis</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p id="recap_radio"></p>
+                                <p id="recap_options">CHARGEMENT EN COUR...<br>
+                                    <img src="{{ asset('img/catalog/loading.gif') }}" width="90" height="90" class="d-inline-block align-top" alt="loading"></p>
+                            </div>
+                            <div class="modal-footer" id="price">
 
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -216,7 +269,6 @@
 
         </div>
 
-    </body>
 
     <script>
         for(let i of document.querySelectorAll('[type=checkbox]')) { i.checked = false; }

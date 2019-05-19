@@ -1,0 +1,93 @@
+/** BLOG CSS  **/
+
+
+.coverImgBlog{
+        height: 705px;
+        background-image: url("../img//blog/cover.jpg");
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+}
+
+.blogText{
+    font-size: 18px;
+}
+
+.container{
+    font-family: 'Lato', 'sans-serif';
+}
+
+.container-blog{
+    background-color: #FDFFFC;
+}
+
+.filterDiv {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.container {
+    overflow: hidden;
+}
+
+#myBtnContainer{
+    background-color: #2EC4B6;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.filterElt {
+    cursor: pointer;
+    margin-right: 2em;
+    text-transform: uppercase;
+}
+
+.filterElt:hover {
+        color: white
+}
+
+.underline {
+    text-decoration: none;
+    position: relative;
+}
+
+.underline:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    bottom: -4px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 0%;
+    background: white;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+
+.underline:hover:after {
+    width: 100%;
+    background: white;
+}
+
+.btn-article {
+    background-color: #011627;
+    color: white;
+    border-radius: 8px;
+    padding: 6px 23px 6px 23px;
+
+}
+
+.img-article{
+    height: 270px;
+    width: 430px;
+    box-shadow: 4px 7px 11px -1px rgba(0,0,0,0.75);
+}

@@ -3,75 +3,74 @@
 {% block title %}Formulaire de Contact{% endblock %}
 
 {% block body %}
-    <style>
-        .contact-img{
-            background-image: url("{{ asset('contact.jpg') }}");
-            min-width: 100%;
-            min-height: 100%;
-        }
 
-        .form-border{
-            border: none;
-        }
-    </style>
-
-    <header class="contact-img">
-        <h1>Nous contacter</h1>
-        <h2>Un renseignement ? Besoin de nous ?</h2>
-    </header>
-
-    <body class="text-center">
-    <p>Contactez-nous pour réaliser vos projets à l'aide de ce formulaire de contact, l'agence Digital Squad sera ravie de vous répondre dans les deux jours ouvrés.</p>
-
-    {# Formulaire de contact #}
-    <div class="container">
-        {{ form_start(form) }}
-        <form>
-            <div class="form-row">
-                <div class="form-group col-md-3">
-                    {{ form_row(form.Nom) }}
-                </div>
-                <div class="form-group col-md-3">
-                    {{ form_row(form.Societe) }}
-                </div>
-            </div>
-
-            <div class="form-row">
-                <div class="form-group col-md-3">
-                    {{ form_row(form.Email) }}
-                </div>
-                <div class="form-group col-md-3">
-                    {{ form_row(form.Telephone) }}
-                </div>
-            </div>
-
-            <div class="form-group col-md-3">
-                {{ form_row(form.Objet) }}
-            </div>
-
-            <div class="form-group col-md-3">
-                {{ form_row(form.Message) }}
-            </div>
-
-            <div class="form-group col-md-6">
-                {{ form_row(form.RGPD) }}
-            </div>
-
-            <button type="submit" value="Submit" class="btn btn-primary">Envoyer</button>
-        </form>
-        {{ form_end(form) }}
+    <div class="coverImgContact">
+        <div class="coverText offset-lg-2 col-lg-8">
+            <h1>Nous contacter</h1>
+            <h6>Un renseignement ? Besoin de nous ?</h6>
+        </div>
     </div>
 
-    {#Devis Icon#}
-    <div class="container">
-        <p>Créez votre devis intéractif ici !</p>
-        <img src="{{ asset('Groupe_13.png') }}" alt="icono-lien">
-        <a href="{{ path('catalog') }}">
-            <img src="{{ asset('letter.png') }}" alt="letter">
-        </a>
+    <div class="container contactBaseText">
+        <div class="text-center mt-3 textColor">
+            <p>Contactez-nous pour réaliser vos projets à l'aide de ce formulaire de contact, l'agence Digital Squad sera ravie de vous répondre dans les deux jours ouvrés.</p><br>
+        </div>
     </div>
 
+        <div class="row justify-content-between contactForm">
+            <div class="col-5">
+                {# Formulaire de contact #}
+                <div class="container col-sm">
+                    {{ form_start(form) }}
+                    <form>
+                        <div class="row">
+                            <div class="col-sm-6 contactBox">
+                                {{ form_row(form.Nom) }}
+                            </div>
+                            <div class="col-sm-6 contactBox">
+                                {{ form_row(form.Societe) }}
+                            </div>
+                        </div>
 
-    </body>
+                        <div class="row">
+                            <div class="col-sm-6 contactBox">
+                                {{ form_row(form.Email) }}
+                            </div>
+                            <div class="col-sm-6 contactBox">
+                                {{ form_row(form.Telephone) }}
+                            </div>
+                        </div>
+
+                        <div class="contactBox">
+                            {{ form_row(form.Objet) }}
+                        </div>
+
+                        <div class="form-group messageWidth">
+                            {{ form_widget(form.Message, {'attr': {'class': 'messageWidth'}}) }}
+                        </div>
+
+                        <div class="form-group">
+                            {{ form_row(form.RGPD, {'attr': {'class': 'textColor'}}) }}
+                        </div>
+
+                        <button type="submit" value="Submit" class="btn btn-primary btn-lg pull-right button">Envoyer</button>
+                    </form>
+                    {{ form_end(form) }}
+                </div>
+            </div>
+
+            <div class="container contactCheck contactText">
+                <div class="col-7 text-center textColor">
+                    {#Devis Icon #}
+                    <p>Créez votre devis intéractif ici !</p><br>
+                    <img src="{{ asset('img/contact/Groupe_13.png') }}" alt="icono-lien"><br><br><br>
+                    <a href="{{ path('catalog') }}">
+                        <img src="{{ asset('img/contact/letter.png') }}" alt="letter"><br>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
 
 {% endblock %}

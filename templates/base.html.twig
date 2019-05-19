@@ -9,6 +9,13 @@
                   crossorigin="anonymous"/>
             <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
             <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.4.0/css/bootstrap4-toggle.min.css" rel="stylesheet">
+            <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+            <link rel="stylesheet" href="{{ asset('css/reference.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/blog.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/contact.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/catalog.css') }}">
+            <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         {% endblock %}
         <style>
             .modal-full {
@@ -25,10 +32,11 @@
 
     </head>
     <body>
+        <a id="haut"></a>
         {#Menu#}
-        <nav class="navbar sticky-top pull-right" data-toggle="modal" data-target=".bd-example-modal-lg">
+        <nav class="navbar sticky-top pull-right mt-5 mr-3" data-toggle="modal" data-target=".bd-example-modal-lg">
             <a class="navbar-brand" href="#">
-                <img src="{{ asset('menu.png') }}" width="30" height="30" class="d-inline-block align-top" alt="">
+                <img src="{{ asset('img/Menu_burger.png') }}" width="45" height="45" class="d-inline-block align-top" alt="">
             </a>
         </nav>
         <div class="container">
@@ -41,27 +49,25 @@
                             <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
                         </div>
                         <div class="col-lg-12">
-                            <img src="{{ asset('infini4.png') }}" width="300" height="200" alt="">
+                            <img src="{{ asset('img/infini_1.png') }}" width="300" height="200" alt="">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
-                            <a href="{{ path('home') }}">ACCUEIL</a></br>
-                            <a href="{{ path('catalog') }}">NOS SERVICES</a></br>
-                            <a href="{{ path('portfolio') }}">NOS CLIENT</a></br>
-                            <a href="{{ path('blog') }}">NOTRE BLOG</a></br>
-                            <a href="{{ path('contact') }}">NOUS CONTACTER</a></br>
+                        <div class="modal-body text-center">
+                            <a href="{{ path('home') }}">ACCUEIL</a><br>
+                            <a href="{{ path('catalog') }}">NOS SERVICES</a><br>
+                            <a href="{{ path('reference.index') }}">NOS CLIENT</a><br>
+                            <a href="{{ path('blog') }}">NOTRE BLOG</a><br>
+                            <a href="{{ path('contact') }}">NOUS CONTACTER</a><br>
 
-                            <a href="{{ path('catalog') }}" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Estimation en direct</a>
+                            <a href="{{ path('catalog') }}" class="button btn-secondary btn-lg active" role="button" aria-pressed="true">Estimation en direct</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
+        <img src="{{ asset('img/infini_1.png') }}" style="position: absolute; z-index: 1;" class="ml-1 p-3 img-fluid">
 
         {% block body %}{% endblock %}
 
@@ -72,28 +78,57 @@
             <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.4.0/js/bootstrap4-toggle.min.js"></script>
         {% endblock %}
 
+
         {#Footer#}
-        <footer class="page-footer fixed-bottom">
-            <div class="container">
-                <div class="col-md-6 mb-4">
-                        <img src="{{ asset('infini4.png') }}" width="300" height="200" alt="">
+    <footer class="page-footer text-center">
+        <div class="footerElt">
+            <div class="row">
+                <div class=" mr-5 offset-lg-11">
+                    <a href="#haut"><img src="{{ asset('img/up-chevron.png') }}"  style="height:33px; width: 33px"></a>
                 </div>
-                <div class="col-md-6 mb-4">
-                    <p>+01 02 03 04 05</p>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <a href="{{ path('contact') }}" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Contactez-nous !</a>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <form class="form-inline">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-                </div>
+            <div class="col-lg-4">
+                <span class="mr-3"><img src="{{ asset('img/infini_1.png') }}" width="160" height="110" class="mb-2 mr-5 img-fluid"></span>
+                <span class="mt-5 phoneNumber" >+33(0) 2 33 04 05</span>
             </div>
-            <div class="footer-copyright text-center py-3">© 2019 Copyright:
-                <a href="#"> DigitalSquad</a>
+           <div class="col-lg-4">
+               <div><a class="btn btn-footer mt-4">Contactez-nous !</a> </div>
+           </div>
+            <div class="col-lg-4 mt-4">
+               <span>
+                   <a href="#"><img src="{{ asset('img/social/instagram.svg') }}" class="img-fluid mr-3" style="height:25px; width: 25px"></a>
+               </span>
+                <span>
+                   <a href="#"><img src="{{ asset('img/social/twitter.svg') }}" class="img-fluid mr-2" style="height:25px; width: 25px"></a>
+               </span>
+                <span>
+                   <a href="#"><img src="{{ asset('img/social/facebook.svg') }}" class="img-fluid" style="height:25px; width: 25px"></a>
+               </span>
             </div>
-        </footer>
+            </div>
+        </div>
+        <div class="siteMap text-center d-none d-sm-block">
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nos Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nos Clients</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Notre blog </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nous contacter</a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright"> © 2019 Digital Squad - Tous droits réservés.</div>
+    </footer>
     </body>
 </html>
+
+
+
