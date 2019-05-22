@@ -64,7 +64,7 @@
                 </div>
             </div>
         </div>
-        <img src="{{ asset('img/infini_1.png') }}" style="position: absolute; z-index: 1;" class="ml-1 p-3 img-fluid">
+        <img src="{{ asset('img/infini_1.png') }}" style="position: absolute; z-index: 1;" class="ml-1 p-3 img-fluid" alt="DigitalSquad_logo">
         {% block body %}
         {% endblock %}
 
@@ -113,25 +113,25 @@
     <footer class="page-footer text-center">
         <div class="footerElt">
             <div class="row">
-                <div class=" mr-5 offset-lg-11">
-                    <a href="#haut"><img src="{{ asset('img/up-chevron.png') }}"  style="height:33px; width: 33px"></a>
+                <div class=" mr-5 offset-lg-11 offset-10">
+                    <a href="#haut"><img src="{{ asset('img/up-chevron.png') }}"  style="height:33px; width: 33px" alt="flècheDeRetour"></a>
                 </div>
-            <div class="col-lg-4">
-                <span class="mr-3"><img src="{{ asset('img/infini_1.png') }}" width="160" height="110" class="mb-2 mr-5 img-fluid"></span>
+            <div class=" col-xl-4 col-lg-12  col-md-12 col-sm-12">
+                <span class="mr-3"><img src="{{ asset('img/infini_1.png') }}" width="160" height="110" class="mb-2 mr-5 img-fluid" alt="DigitalSquad_logo"></span>
                 <span class="mt-5 phoneNumber" >+33(0) 2 33 04 05</span>
             </div>
-           <div class="col-lg-4">
+           <div class=" col-xl-4 col-lg-12 col-md-12 col-sm-12">
                <div><a class="btn btn-footer mt-4">Contactez-nous !</a> </div>
            </div>
-            <div class="col-lg-4 mt-4">
+            <div class=" col-xl-4 col-lg-12 col-md-12 col-sm-12 mt-4  ">
                <span>
-                   <a href="#"><img src="{{ asset('img/social/instagram.svg') }}" class="img-fluid mr-3" style="height:25px; width: 25px"></a>
+                   <a href="#"><img src="{{ asset('img/social/instagram.svg') }}" class="img-fluid mr-3" style="height:25px; width: 25px" alt="instagram_logo"></a>
                </span>
                 <span>
-                   <a href="#"><img src="{{ asset('img/social/twitter.svg') }}" class="img-fluid mr-2" style="height:25px; width: 25px"></a>
+                   <a href="#"><img src="{{ asset('img/social/twitter.svg') }}" class="img-fluid mr-2" style="height:25px; width: 25px" alt="twitter_logo"></a>
                </span>
                 <span>
-                   <a href="#"><img src="{{ asset('img/social/facebook.svg') }}" class="img-fluid" style="height:25px; width: 25px"></a>
+                   <a href="#"><img src="{{ asset('img/social/facebook.svg') }}" class="img-fluid" style="height:25px; width: 25px" alt="facebook_logo"></a>
                </span>
             </div>
             </div>
@@ -139,19 +139,19 @@
         <div class="siteMap text-center d-none d-sm-block">
             <ul class="nav nav-pills nav-fill">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Accueil</a>
+                    <a class="nav-link" href="{{ path('home') }}">Accueil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Nos Services</a>
+                    <a class="nav-link" href="{{ path('catalog') }}">Nos Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Nos Clients</a>
+                    <a class="nav-link" href="{{ path('reference.index') }}">Nos Clients</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Notre blog </a>
+                    <a class="nav-link" href="{{ path('blog') }}">Notre blog </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Nous contacter</a>
+                    <a class="nav-link" href="{{ path('contact') }}">Nous contacter</a>
                 </li>
             </ul>
         </div>
