@@ -3,7 +3,7 @@
 {% block body %}
     <div class="coverImgBlog">
         <div class=" coverText offset-lg-2 col-lg-8">
-            <h1 class="page-title">Notre BLog</h1>
+            <h1 class="page-title">Notre Blog</h1>
         </div>
     </div>
     <div class="container container-blog">
@@ -14,21 +14,54 @@
                 contenu optimisé et une expérience utilisateur agréable est important pour acquérir du
                 trafic vers votre site web. Découvrez comment faire!
             </div>
-            <div class="col-lg-12 mt-5 mb-5">
 
-
-                <div id="myBtnContainer" class=" mb-4 offset-lg-2 col-lg-8">
-                    <span class="mr-5">Filtres <i class="fa fa-caret-right" aria-hidden="true"></i></span>
-                    <a class="filterElt active underline mr-5" onclick="filterSelection('all')"> Tous</a>
-                    <a class="filterElt underline mr-4 " onclick="filterSelection('dev')">Développement</a>
-                    <a class="filterElt underline mr-4" onclick="filterSelection('graph')">Graphisme</a>
-                    <a class="filterElt underline mr-4" onclick="filterSelection('marketing')"> Marketing</a>
-                    <a class="filterElt underline " onclick="filterSelection('actu')"> Actu</a>
-                </div>
+            <!-- Filter Desktop -->
+            <div class=" offset-lg-2 col-lg-8 col-md-12 mt-5 mb-5 d-none d-sm-block">
+                <ul class="nav nav-pills nav-fill" id="myBtnContainer">
+                    <span class="ml-4 mr-2">Filtres <i class="fa fa-caret-right" aria-hidden="true"></i></span>
+                    <li class="nav-item">
+                        <a class="filterElt active underline" onclick="filterSelection('all')"> Tous</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="filterElt underline" onclick="filterSelection('dev')">Développement</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="filterElt underline" onclick="filterSelection('graph')">Graphisme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="filterElt underline" onclick="filterSelection('marketing')"> Marketing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="filterElt underline" onclick="filterSelection('actu')"> Actu</a>
+                    </li>
+                </ul>
             </div>
 
+            <!-- Filter Mobile -->
+            <div class=" offset-3 col-6 mt-5 mb-5 d-block d-sm-none">
+                <ul class="nav nav-pills" id="myBtnContainer">
+                    <span class="mr-5">Filtres <i class="fa fa-caret-right" aria-hidden="true"></i></span>
+                    <li class="nav-item mt-2 mb-2 col-12">
+                        <a class="filterElt active" onclick="filterSelection('all')"> Tous</a>
+                    </li>
+                    <li class="nav-item mt-2 mb-2 col-12">
+                        <a class="filterElt" onclick="filterSelection('dev')">Développement</a>
+                    </li>
+                    <li class="nav-item mt-2 mb-2 col-12">
+                        <a class="filterElt" onclick="filterSelection('graph')">Graphisme</a>
+                    </li>
+                    <li class="nav-item mt-2 mb-2 col-12">
+                        <a class="filterElt" onclick="filterSelection('marketing')"> Marketing</a>
+                    </li>
+                    <li class="nav-item mt-2 col-12">
+                        <a class="filterElt" onclick="filterSelection('actu')"> Actu</a>
+                    </li>
+                </ul>
+            </div>
+
+
             <div class="offset-lg-1 col-lg-5 col-12 filterDiv marketing">
-                <img src="{{ asset('img/blog/article5.jpg') }}" class="img-fluid img-article">
+                <img src="{{ asset('img/blog/article5.jpg') }}" class="img-fluid img-article" alt="googleAdWords">
                 <div class="mt-3"><h4>Référencement Payant ou SEA</h4></div>
                 <div class=" mt-2">
                     Pour annoncer votre activité sur internet, vous pouvez financer une campagne publicitaire
@@ -39,65 +72,64 @@
                 </div>
             </div>
             <div class="offset-lg-1 col-lg-5 filterDiv dev">
-                <img src="{{ asset('img/blog/article2.png') }}" class="img-fluid img-article">
+                <img src="{{ asset('img/blog/article2.png') }}" class="img-fluid img-article" alt="ecranResponsive">
                 <div class="mt-3"><h4>Unités de mesure de CSS3</h4></div>
                 <div class=" mt-2">
                     Depuis longtemps nous avons pris le reflex d’utiliser le pixel pour
                     dimensionner les éléments dans nos feuilles de styles CSS. Mais depuis la multiplicité des tailles d’écran...
                 </div>
-                <div class=""><a class="btn btn-article mt-3 mb-5" href="#">Lire la suite</a>
+                <div class=""><a class="btn btn-article mt-3 mb-5" href="{{ path('article_2') }}">Lire la suite</a>
                 </div>
             </div>
 
             <div class="offset-lg-1 col-lg-5 filterDiv actu ">
-                <img src="{{ asset('img/blog/article3.png') }}" class="img-fluid img-article">
+                <img src="{{ asset('img/blog/article3.png') }}" class="img-fluid img-article" alt="NetflixCatalogue">
                 <div class="mt-3"><h4>Python : Par delà les frontières de Netflix</h4></div>
                 <div class=" mt-2">
                     Netflix : si ce nom ne vous évoque rien, il est temps pour vous d’ouvrir votre naviguateur
                     web et de commencer à abandonner toute vie sociale...
                 </div>
-                <div class=""><a class="btn btn-article mt-3 mb-5" href="#">Lire la suite</a>
+                <div class=""><a class="btn btn-article mt-3 mb-5" href="{{ path('article_3') }}">Lire la suite</a>
                 </div>
             </div>
             <div class="offset-lg-1 col-lg-5  filterDiv graph">
-                <img src="{{ asset('img/empty.png') }}" class="img-fluid">
-                <div class="mt-3"><h4>Article Graphisme</h4></div>
+                <img src="{{ asset('img/blog/article4.jpg') }}" class="img-fluid img-article">
+                <div class="mt-3"><h4>L’importance d’un Bon Design d’Email</h4></div>
                 <div class=" mt-2">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies lorem augue.
-                    In nec eleifend orci, vitae fermentum dolor. Nunc turpis felis, sollicitudin ut s
-                    uscipit at, lobortis eu tortor. Aenean tempor risus nec cursus posuere
+                    Les commerciaux dépensent beaucoup de temps et pas mal d’argent pour
+                    s’assurer que leurs sites web et pages d’atterrissage sont pensées....
                 </div>
-                <div class=""><a class="btn btn-article mt-3 mb-5" href="#">Lire la suite</a>
+                <div class=""><a class="btn btn-article mt-3 mb-5" href="{{ path('article_4') }}">Lire la suite</a>
                 </div>
             </div>
             <div class="offset-lg-1 col-lg-5 filterDiv marketing">
-                <img src="{{ asset('img/blog/article1.png') }}" class="img-fluid img-article">
+                <img src="{{ asset('img/blog/article1.png') }}" class="img-fluid img-article" alt="InconographieSEO">
                 <div class="mt-3"><h4>Stratégie SEO : Création et Optimisation </h4></div>
                 <div class=" mt-2">
                     Nous vous aiderons dans le choix de vos mots clés lors de la rédaction de vos articles
                     pour améliorer votre référencement Google...
                 </div>
-                <div class=""><a class="btn btn-article mt-3 mb-5"  href="#">Lire la suite</a>
+                <div class=""><a class="btn btn-article mt-3 mb-5"  href="{{ path('article_5') }}">Lire la suite</a>
                 </div>
             </div>
             <div class="offset-lg-1 col-lg-5 filterDiv actu ">
-                <img src="{{ asset('img/blog/article6.png') }}" class="img-fluid img-article">
+                <img src="{{ asset('img/blog/article6.png') }}" class="img-fluid img-article" alt="InconographieIA">
                 <div class="mt-3"><h4>OpenClassrooms & Microsoft pour l'IA</h4></div>
                 <div class=" mt-2">
                     Co-fondée par Mathieu Nebra en 2013, la plateforme OpenClassrooms
                     propose des parcours de formations diplômantes reconnues par l’Etat....
                 </div>
-                <div class=""><a class="btn btn-article mt-3 mb-5" href="#">Lire la suite</a>
+                <div class=""><a class="btn btn-article mt-3 mb-5" href="{{ path('article_6') }}">Lire la suite</a>
                 </div>
             </div>
             <div class="offset-lg-1 col-lg-5 filterDiv dev ">
-                <img src="{{ asset('img/blog/article7.jpg') }}" class="img-fluid img-article">
+                <img src="{{ asset('img/blog/article7.jpg') }}" class="img-fluid img-article" alt="puceAMD_RYZEN3000">
                 <div class="mt-3"><h4>AMD RYZEN 3000 date, CPU & Performances</h4></div>
                 <div class=" mt-2">
                     Les processeurs AMD Ryzen 3000 devraient être dans nos Pc cet été.
                     Ces puces alimentées par la nouvelle génération de l’architecture Zen pourraient constituer...
                 </div>
-                <div class=""><a class="btn btn-article mt-3 mb-5" href="#">Lire la suite</a>
+                <div class=""><a class="btn btn-article mt-3 mb-5" href="{{ path('article_7') }}">Lire la suite</a>
                 </div>
             </div>
             <div class="offset-lg-1 col-lg-5  filterDiv marketing ">
@@ -108,7 +140,7 @@
                     In nec eleifend orci, vitae fermentum dolor. Nunc turpis felis, sollicitudin ut s
                     uscipit at, lobortis eu tortor. Aenean tempor risus nec cursus posuere
                 </div>
-                <div class=""><a class="btn btn-article mt-3 mb-5" href="#">Lire la suite</a>
+                <div class=""><a class="btn btn-article mt-3 mb-5" href="{{ path('article_8') }}">Lire la suite</a>
                 </div>
             </div>
 

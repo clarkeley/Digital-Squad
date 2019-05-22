@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="coverImgBlog">
+        <div class=" coverText offset-lg-2 col-lg-8">
+            <h1 class="page-title">Notre Blog</h1>
+        </div>
+    </div>
+    <div class="container mt-5 article-blog">
+
+        <h2 class="text-center"> Python : Par delà les frontières de Netflix</h2>
+        <h6 class="offset-lg-6 offset-6">par Emmanuel, le 05/04/2019</h6>
+    </div>
+
+    <div class="container mb-5 text-article">
+        <div class="row mt-5">
+            <div class="offset-lg-1 col-10 col-12"><img src="{{ asset('img/blog/article3.png') }}" class="img-fluid img-shadow" alt="NetflixCatalogue"></div>
+
+            <div class="offset-lg-1 col-lg-10 mt-5">
+                <p>Netflix : si ce nom ne vous évoque rien, il est temps pour vous d’ouvrir votre naviguateur web et de
+                    commencer à abandonner toute vie sociale.
+                    <br>Célèbre plateforme SVOD aux 148 millions d’abonnés, rendue célèbre grâce à ses tarifs et
+                    son catalogue plus que complet, tient le secret de sa réussite: l’expérience utilisateur.
+                    <br>Derrière cela, une batterie d’algorithmiques qui travaille au service de l’utilisateur.
+                </p>
+                <p>Mais tout ne serait pas possible sans l’aide de PYTHON, le fameux language de programmation tant aimé des développeurs.</p>
+                <p>
+                    Chez Netflix, bon nombre des périphériques composant Open Connect, son réseau de diffusion de contenu,
+                    sont principalement gérés par des applications Python,
+                    qui effectuent différentes tâches telles que le suivi de l'inventaire des périphériques réseau, de leur état ainsi que de leur emplacement
+                    <br>L'équipe en charge de la sécurité utilise également Ptyhon pour accomplir un grand nombre d’objectifs pour Netflix:
+                    automatisation de la sécurité, classification des risques, corrections automatiques et l’identification des vulnérabilités.
+                </p>
+                <h4 class="font-italic text-center mb-3 mt-3"  >" Nous utilisons du code Python bien parallélisé et optimisé pour récupérer
+                    des données à 10 Gbps, gérer des centaines de millions de points de données en mémoire et orchestrer le calcul
+                    sur des dizaines de milliers de cœurs de CPU ".
+                </h4>
+                <p >En plus de tout ça, Python est utilisé dans les algorithmes “machine learning” de Netflix
+                    pour d'autres objectifs comme les recommandations de contenu, la personnalisation d'illustrations et
+                    le marketing. L'entreprise américaine a recours à un outil appelé Metaflow, qui les assiste à "repousser les limites de Python".
+                </p>
+                <p>Il y aurait 8,2 millions de développeurs dans le monde utilisant Python.
+                    Cette population serait ainsi plus importante que celle des développeurs Java. Alors, intéréssé ?
+                </p>
+        </div>
+        </div>
+    </div>
+
+{% endblock %}
+
