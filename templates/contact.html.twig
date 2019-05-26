@@ -3,6 +3,11 @@
 {% block title %}Formulaire de Contact{% endblock %}
 
 {% block body %}
+    <nav class="navbar sticky-top pull-right mt-5 mr-3 modal-width" data-toggle="modal" data-target=".bd-example-modal-lg">
+        <a class="navbar-brand" href="#">
+            <img src="{{ asset('img/Menu_burger.png') }}" width="45" height="45" alt="">
+        </a>
+    </nav>
 
     <div class="coverImgContact">
         <div class="coverText offset-lg-2 col-lg-8">
@@ -18,25 +23,25 @@
     </div>
 
         <div class="row justify-content-between contactForm">
-            <div class="col-5">
+            <div class="col-lg-5">
                 {# Formulaire de contact #}
                 <div class="container col-sm">
                     {{ form_start(form) }}
                     <form>
                         <div class="row">
-                            <div class="col-sm-6 contactBox">
+                            <div class="col-lg-6 contactBox">
                                 {{ form_row(form.Nom) }}
                             </div>
-                            <div class="col-sm-6 contactBox">
+                            <div class="col-lg-6 contactBox">
                                 {{ form_row(form.Societe) }}
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-sm-6 contactBox">
+                            <div class="col-lg-6 contactBox">
                                 {{ form_row(form.Email) }}
                             </div>
-                            <div class="col-sm-6 contactBox">
+                            <div class="col-lg-6 contactBox">
                                 {{ form_row(form.Telephone) }}
                             </div>
                         </div>
@@ -49,18 +54,18 @@
                             {{ form_widget(form.Message, {'attr': {'class': 'messageWidth'}}) }}
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group contactCase">
                             {{ form_row(form.RGPD, {'attr': {'class': 'textColor'}}) }}
                         </div>
 
-                        <button type="submit" value="Submit" class="btn btn-primary btn-lg pull-right button">Envoyer</button>
+                        <button type="submit" value="Submit" class="btn btn-primary btn-lg pull-right buttonContact contactBtnAlign">Envoyer</button>
                     </form>
                     {{ form_end(form) }}
                 </div>
             </div>
 
-            <div class="container contactCheck contactText">
-                <div class="col-7 text-center textColor">
+            <div class="container contactCheck contactText here">
+                <div class="col-lg-7 text-center textColor">
                     {#Devis Icon #}
                     <p>Créez votre devis intéractif ici !</p><br>
                     <img src="{{ asset('img/contact/Groupe_13.png') }}" alt="icono-lien"><br><br><br>

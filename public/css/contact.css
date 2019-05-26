@@ -51,9 +51,31 @@
     margin-bottom: 5%;
 }
 
+@media (max-width: 767px) {
+    .contactBtnAlign {
+        float: none;
+        margin-left: 40%;
+    }
+}
+
 .contactCheck {
     padding-left: 10%;
     margin-bottom: 5%;
+}
+
+@media (max-width: 768px) {
+    .rpdg {
+        width: 5%;
+        height: 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .here {
+        padding-left: 1%;
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
 }
 
 .contactBox{
@@ -78,6 +100,10 @@
 
 }
 
+.contactCase input {
+    margin : 0.3em;
+}
+
 .form-border{
     border: none;
 }
@@ -86,13 +112,17 @@
     width: 100%;
 }
 
-.button {
+.buttonContact {
     background: #2EC4B6;
     color: #FDFFFC;
+    border-color: #2EC4B6;
+}
+
+.buttonContact:hover {
+    background: #2EC4B6;
     border-color: #2EC4B6;
 }
 
 .textColor {
     color: #011627;
 }
-

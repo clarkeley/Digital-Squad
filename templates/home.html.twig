@@ -1,6 +1,12 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+    <nav class="navbar sticky-top pull-right mt-5 mr-3 modal-width" data-toggle="modal" data-target=".bd-example-modal-lg">
+        <a class="navbar-brand" href="#">
+            <img src="{{ asset('img/Menu_burger.png') }}" width="45" height="45" alt="">
+        </a>
+    </nav>
+
     <!-- Header -->
     <div class="homeCoverImg">
         <div class="coverText offset-lg-2 col-lg-8">
@@ -66,41 +72,51 @@
 
         <div class="offset-lg-2 col-lg-4 offset-1 col-10 mt-4">
             <div class="teamCard text-center">
-                <img src="{{ asset('img/rond.png') }}" class="img-fluid mt-5 mb-3" width="150em">
-                <div class="p-4">Team member</div>
+                <img src="{{ asset('img/home/alain.png') }}" class="img-fluid mt-5 mb-3" width="150em">
+                <div class="p-4 teamName">Alain</div>
             </div>
             <div class="bodyCard">
-                <p class="text-center p-5">Graphisme</p>
+                <p class="text-center p-5">
+                    Marketing<br>
+                    Animation des ateliers
+                </p>
             </div>
         </div>
 
         <div class="col-lg-4 offset-lg-0 offset-1 col-10 mt-4">
             <div class="teamCard text-center">
-                <img src="{{ asset('img/rond.png') }}" class="img-fluid mt-5 mb-3" width="150em">
-                <div class="p-4">Team Member</div>
+                <img src="{{ asset('img/home/marvin.png') }}" class="img-fluid mt-5 mb-3" width="150em">
+                <div class="p-4 teamName">Marvin</div>
             </div>
             <div class="bodyCard">
-                <p class="text-center p-5"> Développement</p>
+                <p class="text-center p-5">
+                    Développement Back-end<br>
+                    Gestion de projet
+                </p>
             </div>
         </div>
 
         <div class="offset-lg-2 col-lg-4 offset-1 col-10 mt-4">
             <div class="teamCard text-center">
-                <img src="{{ asset('img/rond.png') }}" class="img-fluid mt-5 mb-3" width="150em">
-                <div class="p-4">Team member</div>
+                <img src="{{ asset('img/home/alec.png') }}" class="img-fluid mt-5 mb-3" width="150em">
+                <div class="p-4 teamName">Alec</div>
             </div>
             <div class="bodyCard">
-                <p class="text-center p-5">Marketing</p>
+                <p class="text-center p-5">
+                    Design
+                </p>
             </div>
         </div>
 
         <div class="col-lg-4 offset-lg-0 offset-1 col-10 mt-4">
             <div class="teamCard text-center">
-                <img src="{{ asset('img/rond.png') }}" class="img-fluid mt-5 mb-3" width="150em">
-                <div class="p-4">Team Member</div>
+                <img src="{{ asset('img/home/emmanuel.png') }}" class="img-fluid mt-5 mb-3" width="150em">
+                <div class="p-4 teamName">Emmanuel</div>
             </div>
             <div class="bodyCard">
-                <p class="text-center p-5"> Développement Back</p>
+                <p class="text-center p-5">
+                    Développement Back & Front
+                </p>
             </div>
         </div>
 
