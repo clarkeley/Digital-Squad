@@ -1,9 +1,7 @@
 /** BLOG CSS  **/
-
-
 .coverImgBlog{
         height: 705px;
-        background-image: url("../img//blog/cover.jpg");
+        background-image: url("../img//blog/cover.png");
         position: relative;
         background-repeat: no-repeat;
         background-position: center;
@@ -11,7 +9,7 @@
 }
 
 .blogText{
-    font-size: 18px;
+    font-size: 19px;
 }
 
 .container{
@@ -89,5 +87,15 @@
 .img-article{
     height: 270px;
     width: 430px;
+    box-shadow: 4px 7px 11px -1px rgba(0,0,0,0.75);
+}
+
+
+.article-blog{
+    font-family: 'Lato';
+    font-size: 1em;
+}
+
+.img-shadow{
     box-shadow: 4px 7px 11px -1px rgba(0,0,0,0.75);
 }

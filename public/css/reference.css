@@ -3,7 +3,7 @@
 .coverImgRef {
     height: 705px;
     position: relative;
-    background-image: url("../img/references/reference.jpg");
+    background-image: url("../img/references/cover.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -22,9 +22,8 @@
 
 .coverText {
     position: absolute;
-    bottom: 30%;
+    bottom: 20%;
     text-align: center
-
 }
 
 .referenceText h3{
@@ -38,7 +37,9 @@
     font-size: 21px;
 }
 
-
+.reference-article{
+    font-family: 'Lato';
+}
 
 .references {
     background-color: #2EC4B6;
@@ -54,6 +55,13 @@
     transition:  all 0.3s;
 }
 
+.badge-ds{
+    padding: 5px;
+    background-color: #2EC4B6;
+    color: white;
+    margin-right: 2px;
+    font-size: 1em;
+}
 
 
 

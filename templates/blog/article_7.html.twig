@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="coverImgBlog">
+        <div class=" coverText offset-lg-2 col-lg-8">
+            <h1 class="page-title">Notre Blog</h1>
+        </div>
+    </div>
+    <div class="container mt-5 article-blog">
+        <h2 class="text-center">AMD RYZEN 3000 date, CPU & Performances</h2>
+        <h6 class="offset-lg-6 offset-6">par Emmanuel, le 23/04/2019</h6>
+    </div>
+    <div class="container mb-3 text-article">
+        <div class="row mt-5">
+            <div class="offset-lg-1 col-lg-10">
+                <div class="text-center mb-4"><img src="{{ asset('img/blog/article7.jpg') }}" class="img-fluid img-shadow"  alt="puceAMD_RYZEN3000"></div>
+                <p>Les processeurs AMD Ryzen 3000 devraient être dans nos Pc cet été. Ces puces alimentées par la nouvelle génération de l’architecture Zen pourraient constituer
+                    le silicium qui permettra aux rouges de se placer une nouvelle fois au sommet du panthéon des processeurs gaming.</p>
+                <p> Contrairement aux rumeurs, AMD n’opterait pas pour une sortie simultanée, l’entreprise devrait d’abord décliner ses processeurs Ryzen 3000. Ces derniers promettent des performances IPC 15 % supérieures
+                   à la génération actuelle et embarqueraient jusqu’à 16 cœurs. Un bon moyen de profiter de la faiblesse actuelle d’Intel,
+                   toujours confronté à de graves pénuries, les processeurs EPYC Rome arriveraient quant à eux un peu plus tard.</p>
+                <p>Enfin, au sujet des GPU Navi, Lisa Su nous rassure : les premiers modèles occuperont le milieu de gamme et coûteront moins chers que la Radeon VII.</p>
+                <h5 class="font-weight-bold">Date</h5>
+                <p>La nouvelle version potentielle des nouveaux processeurs et GPU gravés en 7mn correspond à la confirmation par Lisa Su d’une date de sortie approximative de la mi-année.</p>
+                <p>Cela signifie que les processeurs AMD Ryzen de 3éme génération seront peut-être annoncés à la Computex voir l’E3 pendant la conférence du Dr. Lisa Su, ainsi avoir une sortie complète début juillet.</p>
+                <h5 class="font-weight-bold">CPU Spécifications</h5>
+               <p>Avec Ryzen 3000, AMD introduit la microarchitecture Zen 2 sur le marché grand public. <br>
+                   Cela signifie que de nombreuses nouveautés intéressantes s’offrent à nous, dans la fiche technique par exemple: jusqu’à 16 cœurs, faible consommation d’énergie, PCIe 4.0 et bien d’autres...</p>
+                <h5 class="font-weight-bold">Performances</h5>
+                <p>Un échantillon d'ingénierie de huit cœurs, le Ryzen 3000 a réussi à surpasser légèrement le processeur
+                    rIntel i9 9900K dans une exécution multicœur Cinebench R15. </p>
+                <p>C’est impressionnant, mais c’est surtout la puce de 47 W inférieure à la puce Intel nécessaire pour y
+                    parvenir qui est impressionnante.<br> En conclusion, si vous êtes adèpte du multitâches, les tarifs ainsi que les specs des Ryzen devraient combler toutes vos attentes !</p>
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

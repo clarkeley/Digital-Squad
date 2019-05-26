@@ -49,13 +49,15 @@
         <div class="text-center"><img src="{{ asset('img/Groupe_41.png') }}" width="60"> </div>
     </div>
 
-    <div class="row mb-5 mt-3">
-        <div class="offset-lg-2 col-lg-8">
+    <!-- feedback Desktop -->
+    <div class="row mb-5 mt-3 d-none d-sm-block offset-lg-2 col-lg-8">
+        <div class="">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -80,11 +82,44 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-
-
+    </div>
+    </div>
+    <!-- feedback Mobile -->
+    <div class="row mb-5 mt-3 d-block d-sm-none offset-1 col-10">
+        <div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="{{ asset('img/feedbacks/avis1_mobile.png') }}" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{{ asset('img/feedbacks/avis2_mobile.png') }}" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{{ asset('img/feedbacks/avis3_mobile.png') }}" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{{ asset('img/feedbacks/avis4_mobile.png') }}" alt="Fourth slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
     </div>
 
-    </div>
 
 
 {% endblock %}

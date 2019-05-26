@@ -3,28 +3,30 @@
 {% block body %}
     <div class="coverImgBlog">
         <div class=" coverText offset-lg-2 col-lg-8">
-            <h1 class="page-title">Notre BLog</h1>
+            <h1 class="page-title">Notre Blog</h1>
         </div>
     </div>
+
+    <div class="container mt-5 article-blog">
+
+        <h2 class="text-center">Unité de mesure de CSS 3</h2>
+        <h6 class="offset-lg-6 offset-6">par Marvin, le 22/05/2019</h6>
+    </div>
 <div class="container mb-5 text-article">
-    <div class="row mt-5">
-        <div class="offset-lg-2 col-lg-8 offset-lg-2"><h2>Unités de mesure de CSS3</h2></div>
-        <div class="offset-lg-5 col-lg-8">par Marvin, le 22/05/2019</div>
-    </div>
-<div class="row mt-5">
-    <p class="offset-lg-1 col-lg-10">Depuis longtemps nous avons le reflex d’utiliser le pixel pour dimensionner les éléments dans nos feuilles de styles CSS.
+<div class="row mt-5 offset-lg-1 col-lg-10">
+    <p>Depuis longtemps nous avons le reflex d’utiliser le pixel pour dimensionner les éléments dans nos feuilles de styles CSS.
         Mais depuis la multiplicité des tailles d’écran cette solution n’est pas viable au risque de fausser le rendu désiré.</p>
-    <p class="offset-lg-1 col-lg-10" >CSS 3 permet d’utiliser de nouvelles valeurs pour le dimensionnement des éléments en fonction de la taille de la fenêtre.
+    <p>CSS 3 permet d’utiliser de nouvelles valeurs pour le dimensionnement des éléments en fonction de la taille de la fenêtre.
         Le VW, VH et Vmin.</p>
-    <p class="offset-lg-1 col-lg-10">Le VW, VH et Vmin.</p>
-    <div class="offset-lg-1 col-10"><img src="{{ asset('img/article2.png') }}" class="img-fluid">
+    <p>Le VW, VH et Vmin.</p>
+    <div><img src="{{ asset('img/blog/article2.png') }}" class="img-fluid img-shadow" alt="ecranResponsive">
     </div>
-    <p class="offset-lg-1 col-lg-10 mt-4">En utilisant ces unités, lors de la réduction du corps de la fenêtre l’élément
+    <p class=" mt-4">En utilisant ces unités, lors de la réduction du corps de la fenêtre l’élément
         se réduira suivant le schéma initialement prévu, ces unités étant dynamiques plutôt que statistiques.</p>
-    <p class="offset-lg-1 col-lg-10" >1vw = 1% de la largeur de la fenêtre</p>
-    <p class="offset-lg-1 col-lg-10" >1VH = 1% de la hauteur de la fenêtre</p>
-    <p class="offset-lg-1 col-lg-10" >1vmin = 1vw ou 1VH, soit la valeur la plus petite</p>
-    <p class="offset-lg-1 col-lg-10">Attention cependant, cette technologie n’est pas encore supporté par l’ensemble des navigateurs.
+    <p>1vw = 1% de la largeur de la fenêtre</p>
+    <p>1VH = 1% de la hauteur de la fenêtre</p>
+    <p>1vmin = 1vw ou 1VH, soit la valeur la plus petite</p>
+    <p>Attention cependant, cette technologie n’est pas encore supporté par l’ensemble des navigateurs.
         Vous pouvez consulter ce lien, pour connaitre les navigateurs supportant cette technologie <a href="https://caniuse.com/#feat=viewport-units<">Caniuse.com</a> </p>
 
 </div>

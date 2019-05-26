@@ -4,25 +4,29 @@
 }
 
 /** HOME CSS  **/
-
-
 .page-title{
     font-family: 'coolvetica', 'sans-serif';
     font-size: 6em;
     color: white;
 }
 
-.page-second-title{
+.page-title-mobile{
+    font-family: 'coolvetica', 'sans-serif';
+    font-size: 3.2em;
+    color: white;
+}
+
+.second-title{
     font-family: 'Lato', 'sans-serif';
     font-size: 2em;
     color: white;
 }
 
-.page-title-mobile{
-    font-family: 'Coolvetica';
-    font-size: 4em;
+.second-title-mobile{
+    font-family: 'Lato', 'sans-serif';
+    font-size: 1.3em;
+    color: white;
 }
-
 
 
 .btn-cta{
@@ -42,30 +46,18 @@
 .homeCoverImg {
     height: 100vh;
     position: relative;
-    background-image: url("../img/home/cover.jpg");
+    background-image: url("../img/home/cover.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
 }
 
-.coverTextMobile {
+.coverText {
     position: absolute;
     bottom: 15%;
-    text-align: center
+    text-align: center;
 
-}
-
-.centeredDiv {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 890px;
-    height: 100px;
-    border-radius: 3px;
 }
 
 .section-presentation {
@@ -166,7 +158,7 @@
 
 .phoneNumber{
     font-family: 'Lato', 'sans-serif';
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .copyright {

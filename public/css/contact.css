@@ -1,0 +1,98 @@
+.coverImgContact {
+    height: 705px;
+    position: relative;
+    background-image: url("../img/contact/contact.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.coverImgContact h1{
+    font-family: 'coolvetica';
+    font-size: 6em;
+    color: #FDFFFC;
+}
+
+.coverImgContact h6{
+    font-family: 'Lato';
+    font-size: 2em;
+    color: #FDFFFC;
+}
+
+.coverText {
+    position: absolute;
+    bottom: 5%;
+    text-align: center
+
+}
+
+.contactText h3{
+    font-family: 'Lato';
+    font-size: 2em;
+    background-color: #FDFFFC;
+}
+
+.contactBaseText p{
+    font-family: 'Lato';
+    font-size: 1.3em;
+    margin-top: 7%;
+}
+
+.contactText p{
+    font-family: 'Lato';
+    font-size: 2em;
+    margin-top: 7%;
+}
+
+.contactForm {
+    margin-top: 5%;
+    padding-left: 10%;
+    margin-bottom: 5%;
+}
+
+.contactCheck {
+    padding-left: 10%;
+    margin-bottom: 5%;
+}
+
+.contactBox{
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.contactText {
+    color: #B0B9BC;
+}
+
+.contactBox{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    border-bottom: 1px solid rgba(0,0,0,.5);
+
+}
+
+.form-border{
+    border: none;
+}
+
+.messageWidth {
+    width: 100%;
+}
+
+.button {
+    background: #2EC4B6;
+    color: #FDFFFC;
+    border-color: #2EC4B6;
+}
+
+.textColor {
+    color: #011627;
+}
+

@@ -1,0 +1,89 @@
+.coverImgCatalog {
+    height: 705px;
+    position: relative;
+    background-image: url("../img/catalog/Nos_services+filtre.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.coverImgCatalog h1{
+    font-family: 'coolvetica';
+    font-size: 6em;
+    color: #FDFFFC;
+}
+
+.coverImgCatalog h6{
+    font-family: 'Lato';
+    font-size: 2em;
+    color: #FDFFFC;
+}
+
+.section-presentation {
+    background-color: #2EC4B6;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 100;
+    font-family: 'Lato';
+}
+
+.img-presentation {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.link-catalog {
+    color: red;
+}
+
+.text-linkSize h6 {
+    font-family: 'Lato';
+    font-size: 2em;
+    color: #FDFFFC;
+    margin-bottom: 4%;
+}
+
+.collapse-color {
+    background-color: #FF9F1C;
+}
+
+.collapse-text {
+    color: #FDFFFC;
+    font-size: 1em;
+}
+
+.catalog input[type=checkbox] {
+    display: none;
+}
+
+.catalog label {
+    display: inline-block;
+    width: 8em;
+}
+
+
+.button-reset {
+    background-color: red;
+    border-color: red;
+    margin-right: 2%;
+}
+
+.button-reset:hover {
+    background-color: red;
+    border-color: red;
+}
+
+.button-estimate {
+    background-color: #2EC4B6;
+    border-color: #2EC4B6;
+}
+
+.button-estimate:hover {
+    background-color: #2EC4B6;
+    border-color: #2EC4B6;
+}
+
+.button-group {
+    margin-bottom: 5%;
+}

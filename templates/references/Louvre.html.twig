@@ -8,10 +8,28 @@
                 communication de ces marques et leur identité visuelle.</h6>
         </div>
     </div>
-    <div class="text-center">
-        <h2>Musée du Louvre - Billeterie en ligne </h2>
+    <div class="text-center reference-article">
+        <h2 class="mt-5 mb-3 ">Musée du Louvre - Billeterie en ligne </h2>
         <div class="offset-lg-2 col-lg-8"><img src="{{ asset('img/references/Louvre1.png') }} " class="img-fluid"> </div>
-        <p></p>
+    </div>
+    <div class="row reference-article">
+        <div class="offset-lg-2 col-lg-8 mt-5 mb-5">
+            <p>Pour ce projet, il fallait mettre en place un système de réservation de billet pour le Musée du Louvre.</p>
+            <p>Le projet a été développé sous Symfony 3, ce qui a permis de partir d’une base solide, et développer la fonctionnalité de tunnel d’achat
+                en respectant précisément les demandes du client.</p>
+            <p>En effet, le cahier des charges demandait un workflow de paiement sous forme de formulaire où le visiteur commençait par ajouter un mail,
+                la date de sa visite, ainsi que le type (journée - demi-journée) et le nombre de billet désiré.</p>
+            <p>Il fallait ensuite ajouter en fonction de ces informations le nom de chaque visiteur ainsi que l’âge afin
+                de générer un billet avec le bon prix.
+                Ainsi le visiteur était redirigé vers un récapitulatif puis avait la possibilité de procéder au paiement via Stripe.</p>
+            <p>Le cahier des charges précisait également des contraintes horaires, liées à l’âge et aux nombres de tickets vendus par jours.</p>
+            <p>Le Louvre étant un lieu touristique, une fonctionnalité de traduction en anglais a également été ajouté au site.</p>
+            <span class="badge badge-ds">#Symfony</span>
+            <span class="badge badge-ds">#Doctrine</span>
+            <span class="badge badge-ds">#Tests Unitaires</span>
+            <span class="badge badge-ds">#Composer</span>
+            <span class="badge badge-ds">#Bootstrap</span>
+        </div>
     </div>
 
 
