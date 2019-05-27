@@ -53,15 +53,19 @@
     font-size: 1em;
 }
 
-.catalog input[type=checkbox] {
-    display: none;
+.img-responsive {
+    margin: 0 auto;
 }
 
 .catalog label {
-    display: inline-block;
-    width: 8em;
+    width: 10em;
+    float: bottom;
 }
 
+.catalog input {
+    background-color: #011627;
+    color: #FDFFFC;;
+}
 
 .button-reset {
     background-color: red;
