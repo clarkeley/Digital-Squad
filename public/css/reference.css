@@ -41,6 +41,12 @@
     font-family: 'Lato';
 }
 
+.border{
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
 .references {
     background-color: #2EC4B6;
     margin-top: 50px;

@@ -31,7 +31,8 @@ class ContactType extends AbstractType
                 'attr' => [
                     'placeholder' => "Société",
                     'class' => 'form-border'
-                ]
+                ],
+                'required' => false
             ])
             ->add('Objet', TextType::class, [
                 'label' => false,
@@ -45,7 +46,8 @@ class ContactType extends AbstractType
                 'attr' => [
                     'placeholder' => "Téléphone",
                     'class' => 'form-border'
-                ]
+                ],
+                'required' => false
             ])
             ->add('Email', EmailType::class, [
                 'label' => false,

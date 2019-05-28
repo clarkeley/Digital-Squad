@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+    {% include 'menu.html.twig' %}
+
+    <div class="coverImgRef">
+        <div class=" coverText offset-lg-2 col-lg-8">
+            <h1>Nos Clients</h1>
+            <h6>Découvrez comment l’agence a développé la construction de site web pour la
+                communication de ces marques et leur identité visuelle.</h6>
+        </div>
+    </div>
+
+    <div class="border offset-lg-1 col-lg-10 mt-5 mb-5">
+        <div class="text-center reference-article ">
+            <h2 class="mt-5 mb-3 ">Le Festival ElektroPop</h2>
+        </div>
+
+        <div class="row reference-article">
+            <div class="offset-lg-2 col-lg-8 mt-5 mb-5">
+                <p>Le client de ce projet est un organisateur d’évènement musicaux.</p>
+                <p>Sa nouvelle ambition était d’organiser un festival de musique électronique sur un terrain de plus de 8000m² dans la proche banlieue de Lille, à Lambersart  (les 15, 16 et 17 août 2019).</p>
+                <p>
+                    Son nom : le « ElektroPop Festival ».
+                </p>
+                <p>
+                    Les besoins du client concernaient principalement la conception graphique, à savoir les maquettes version bureau et version mobile du futur site web de l’évènement ainsi qu’un logo aux couleurs du festival.
+                </p>
+
+                <span class="badge badge-ds">#Maquettes</span>
+                <span class="badge badge-ds">#Logo</span>
+                <span class="badge badge-ds">#Adobe XD</span>
+                <span class="badge badge-ds">#Wireframes</span>
+                <span class="badge badge-ds">#Fonctionnalités</span><br><br>
+
+                <h5>Voici un aperçu de ce qui a été réalisé :</h5>
+
+                <div class="text-center reference-article ">
+                    <p>Le logo</p>
+                    <div class="offset-lg-2 col-lg-8"><img src="{{ asset('img/references/logo.png') }} " class="img-fluid"> </div>
+                </div><br><br>
+
+                <div class="text-center reference-article ">
+                    <p>La maquette bureau de la page d’accueil</p>
+                    <div class="offset-lg-2 col-lg-8"><img src="{{ asset('img/references/Accueil.png') }} " class="img-fluid"> </div>
+                </div><br><br>
+
+                <div class="text-center reference-article ">
+                    <p>La maquette mobile de la page du panier (billetterie)</p>
+                    <div class="offset-lg-2 col-lg-8"><img src="{{ asset('img/references/Mobile - billetterie - validation.png') }} " class="img-fluid"> </div>
+                </div><br><br>
+
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

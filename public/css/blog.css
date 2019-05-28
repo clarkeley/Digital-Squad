@@ -20,24 +20,9 @@
     background-color: #FDFFFC;
 }
 
-.filterDiv {
-    display: none;
-}
 
-.show {
-    display: block;
-}
 
-.container {
-    overflow: hidden;
-}
 
-#myBtnContainer{
-    background-color: #2EC4B6;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-}
 
 .filterElt {
     cursor: pointer;
@@ -84,6 +69,18 @@
 
 }
 
+.btn-filter {
+    background-color: #2EC4B6;
+    border-color: #2EC4B6;
+    color: #FDFFFC;
+}
+
+.btn-filter:hover {
+    background-color: #2EC4B6;
+    border-color: #2EC4B6;
+    color: #FDFFFC;
+}
+
 .img-article{
     height: 270px;
     width: 430px;
@@ -99,3 +96,4 @@
 .img-shadow{
     box-shadow: 4px 7px 11px -1px rgba(0,0,0,0.75);
 }
+

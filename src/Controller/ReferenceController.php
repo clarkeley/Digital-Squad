@@ -26,4 +26,29 @@ class ReferenceController extends AbstractController
         return $this->render('references/Louvre.html.twig');
     }
 
+    /**
+     * @Route("/references/Webyoga", name="reference.webyoga")
+     */
+      public function showReferenceTwo()
+      {
+          return $this->render('references/webyoga.html.twig');
+      }
+
+
+      /**
+       * @Route("/references/Multilingua", name="reference.multilingua")
+       */
+        public function showReferenceThree()
+        {
+            return $this->render('references/multilingua.html.twig');
+        }
+
+    /**
+     * @Route("/references/Festival", name="reference.festival")
+     */
+    public function showReferenceFour()
+    {
+        return $this->render('references/festival.html.twig');
+    }
+
 }

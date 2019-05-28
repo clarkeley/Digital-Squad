@@ -1,6 +1,8 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+    {% include 'menu.html.twig' %}
+
     <div class="coverImgRef">
         <div class=" coverText offset-lg-2 col-lg-8">
             <h1>Nos Clients</h1>
@@ -8,9 +10,10 @@
                 communication de ces marques et leur identité visuelle.</h6>
         </div>
     </div>
+    <div class="border offset-lg-1 col-lg-10 mt-5 mb-5">
     <div class="text-center reference-article">
         <h2 class="mt-5 mb-3 ">Musée du Louvre - Billeterie en ligne </h2>
-        <div class="offset-lg-2 col-lg-8"><img src="{{ asset('img/references/Louvre1.png') }} " class="img-fluid"> </div>
+        <div class="offset-lg-2 col-lg-8"><img src="{{ asset('img/references/louvre.png') }} " class="img-fluid"> </div>
     </div>
     <div class="row reference-article">
         <div class="offset-lg-2 col-lg-8 mt-5 mb-5">
@@ -31,7 +34,6 @@
             <span class="badge badge-ds">#Bootstrap</span>
         </div>
     </div>
-
-
+    </div>
 {% endblock %}
 
