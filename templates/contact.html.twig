@@ -3,11 +3,7 @@
 {% block title %}Formulaire de Contact{% endblock %}
 
 {% block body %}
-    <nav class="navbar sticky-top pull-right mt-5 mr-3 modal-width" data-toggle="modal" data-target=".bd-example-modal-lg">
-        <a class="navbar-brand" href="#">
-            <img src="{{ asset('img/Menu_burger.png') }}" width="45" height="45" alt="">
-        </a>
-    </nav>
+    {% include 'menu.html.twig' %}
 
     <div class="coverImgContact">
         <div class="coverText offset-lg-2 col-lg-8">
