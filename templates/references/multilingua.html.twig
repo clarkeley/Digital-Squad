@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+    <div class="coverImgRef">
+        <div class=" coverText offset-lg-2 col-lg-8">
+            <h1>Nos Clients</h1>
+            <h6>Découvrez comment l’agence a développé la construction de site web pour la
+                communication de ces marques et leur identité visuelle.</h6>
+        </div>
+    </div>
+    <div class="border offset-lg-1 col-lg-10 mt-5 mb-5">
+    <div class="text-center reference-article ">
+        <h2 class="mt-5 mb-3 ">Multilingua - Application Mobile</h2>
+        <div class="offset-lg-2 col-lg-8"><img src="{{ asset('img/references/multilingua2.png') }} " class="img-fluid"> </div>
+    </div>
+    <div class="row reference-article">
+        <div class="offset-lg-2 col-lg-8 mt-5 mb-5">
+            <p>Franck Westworth, PDF de Multilingua, exploite des salles de formation en langues étrangères
+                (anglais, espagnol, allemand, portugais).</p>
+            <p>Disposant d’un site en ligne avec des cours, diverses ressources et face à l’accroissement de l’usage
+                des tablettes et mobiles, souhaitait developer rapidement une présence sur smartphone.</p>
+            <p>
+                Pour proposer cette experience, il eu l’idée d’une application mobile unique consistant à écouter ou
+                lire une micro-leçon chaque jour, et à valider sa compréhension à travers divers exercices très courts.
+            </p>
+            <p>
+                Pour proposer rapidement un environnement de test, nous avons fait le choix de partir sur une base Android
+                / Java et de réutiliser les pages html déjà existantes.
+            </p>
+            <h5>Les contraintes :</h5>
+            <p>Traduction Anglais/Français complète de l’application.</p>
+            <p>L’application doit pouvoir proposer l’enregistrement / la connexion à un compte.</p>
+            <p>Les exercices doivent porter sur la leçon du jour mais peuvent aussi porter sur une leçon précédente,
+                pour vérifier si elle a bien été retenue.</p>
+            <p>En outre, l’application doit permettre de contacter son responsable de formation chez Multilingua.</p>
+            <p>Un rappel doit pouvoir être envoyé par l’application avant la formation.</p>
+            <span class="badge badge-ds">#Android</span>
+            <span class="badge badge-ds">#Java</span>
+            <span class="badge badge-ds">#Tests</span>
+            <span class="badge badge-ds">#Material Design</span>
+            <span class="badge badge-ds">#Android Studio</span>
+
+
+        </div>
+    </div>
+    </div>
+
+{% endblock %}

@@ -1,5 +1,30 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+<script>
+    window.addEventListener("load", function(){
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#2ec4b6",
+                    "text": "#ffffff"
+                },
+                "button": {
+                    "background": "#ff9f1c",
+                    "text": "#ffffff"
+                }
+            },
+            "position": "top",
+            "static": true,
+            "content": {
+                "message": "Ce site utilise les cookies pour vous proposez la meilleure expérience. ",
+                "dismiss": "OK",
+                "link": "En savoir plus",
+                "href": "https://www.cnil.fr/fr/cookies-traceurs-que-dit-la-loi"
+            }
+        })});
+</script>
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}DigitalSquad{% endblock %}</title>
@@ -13,6 +38,7 @@
             <link rel="stylesheet" href="{{ asset('css/blog.css') }}">
             <link rel="stylesheet" href="{{ asset('css/home.css') }}">
             <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
         {% endblock %}
         <style>
             .modal-full {
@@ -64,11 +90,14 @@
                 </div>
             </div>
         </div>
-        <img src="{{ asset('img/infini_1.png') }}" style="position: absolute; z-index: 1;" class="ml-1 p-3 img-fluid" alt="DigitalSquad_logo">
+       <a href="{{ path('home') }}"><img src="{{ asset('img/infini_1.png') }}" style="position: absolute; z-index: 1;" class="ml-1 p-3 img-fluid" alt="DigitalSquad_logo"></a>
         {% block body %}
         {% endblock %}
 
         {% block javascripts %}
+
+            <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+            <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
