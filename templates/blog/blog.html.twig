@@ -1,4 +1,4 @@
-{% extends 'base.html.twig' %}
+{% extends 'base.html.twig'%}
 
 {% block body %}
     {% include 'menu.html.twig' %}
@@ -8,61 +8,23 @@
             <h1 class="page-title">Notre Blog</h1>
         </div>
     </div>
+
     <div class="container container-blog">
         <div class="row">
-            <div class="offset-lg-1 col-lg-10 offset-lg-1 text-center mt-5 blogText">
-                Les dernières actualités du Web et de notre agence sont ici ! Vos sites méritent un
+            <div class="offset-lg-1 col-lg-10 offset-lg-1 text-center mt-5 mb-5 blogText">
+                Les dernières actualités du Web et de notre agence sont ici ! Vos sites méritent un
                 bon référencement naturel grâce à l’amélioration des mots clés utilisés. Créer un
                 contenu optimisé et une expérience utilisateur agréable est important pour acquérir du
                 trafic vers votre site web. Découvrez comment faire!
             </div>
 
-            <!-- Filter Desktop -->
-            <div class=" offset-lg-2 col-lg-8 col-md-12 mt-5 mb-5 d-none d-sm-block">
-                <ul class="nav nav-pills nav-fill" id="myBtnContainer">
-                    <span class="ml-4 mr-2">Filtres <i class="fa fa-caret-right" aria-hidden="true"></i></span>
-                    <li class="nav-item">
-                        <a class="filterElt active underline" onclick="filterSelection('all')"> Tous</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="filterElt underline" onclick="filterSelection('dev')">Développement</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="filterElt underline" onclick="filterSelection('graph')">Graphisme</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="filterElt underline" onclick="filterSelection('marketing')"> Marketing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="filterElt underline" onclick="filterSelection('actu')"> Actu</a>
-                    </li>
-                </ul>
+            <div class="btn-group btn-group-toggle offset-lg-1 col-lg-10 offset-lg-1 text-center mt-5 mb-5" data-toggle="buttons">
+                <button type="button" class="btn btn-outline-info btn-filter" id="design_select" onclick="hidenn1()">Design</button>
+                <button type="button" class="btn btn-outline-info btn-filter" id="mrk_select" onclick="hidenn2()">Marketing</button>
+                <button type="button" class="btn btn-outline-info btn-filter" id="dev_select" onclick="hidenn3()">Developpement</button>
             </div>
 
-            <!-- Filter Mobile -->
-            <div class=" offset-3 col-6 mt-5 mb-5 d-block d-sm-none">
-                <ul class="nav nav-pills" id="myBtnContainer">
-                    <span class="mr-5">Filtres <i class="fa fa-caret-right" aria-hidden="true"></i></span>
-                    <li class="nav-item mt-2 mb-2 col-12">
-                        <a class="filterElt active" onclick="filterSelection('all')"> Tous</a>
-                    </li>
-                    <li class="nav-item mt-2 mb-2 col-12">
-                        <a class="filterElt" onclick="filterSelection('dev')">Développement</a>
-                    </li>
-                    <li class="nav-item mt-2 mb-2 col-12">
-                        <a class="filterElt" onclick="filterSelection('graph')">Graphisme</a>
-                    </li>
-                    <li class="nav-item mt-2 mb-2 col-12">
-                        <a class="filterElt" onclick="filterSelection('marketing')"> Marketing</a>
-                    </li>
-                    <li class="nav-item mt-2 col-12">
-                        <a class="filterElt" onclick="filterSelection('actu')"> Actu</a>
-                    </li>
-                </ul>
-            </div>
-
-
-            <div class="offset-lg-1 col-lg-5 col-12 filterDiv marketing">
+            <div class="offset-lg-1 col-lg-5 col-12" id="mrk_01">
                 <img src="{{ asset('img/blog/article5.jpg') }}" class="img-fluid img-article" alt="googleAdWords">
                 <div class="mt-3"><h4>Référencement Payant ou SEA</h4></div>
                 <div class=" mt-2">
@@ -73,7 +35,8 @@
                 <div class=""><a class="btn btn-article mt-3 mb-5" href="{{ path('article_1') }}">Lire la suite</a>
                 </div>
             </div>
-            <div class="offset-lg-1 col-lg-5 filterDiv dev">
+
+            <div class="offset-lg-1 col-lg-5" id="dev_01">
                 <img src="{{ asset('img/blog/article2.png') }}" class="img-fluid img-article" alt="ecranResponsive">
                 <div class="mt-3"><h4>Unités de mesure de CSS3</h4></div>
                 <div class=" mt-2">
@@ -84,7 +47,7 @@
                 </div>
             </div>
 
-            <div class="offset-lg-1 col-lg-5 filterDiv actu ">
+            <div class="offset-lg-1 col-lg-5" id="dev_02">
                 <img src="{{ asset('img/blog/article3.png') }}" class="img-fluid img-article" alt="NetflixCatalogue">
                 <div class="mt-3"><h4>Python : Par delà les frontières de Netflix</h4></div>
                 <div class=" mt-2">
@@ -94,7 +57,8 @@
                 <div class=""><a class="btn btn-article mt-3 mb-5" href="{{ path('article_3') }}">Lire la suite</a>
                 </div>
             </div>
-            <div class="offset-lg-1 col-lg-5  filterDiv graph">
+
+            <div class="offset-lg-1 col-lg-5" id="design_01">
                 <img src="{{ asset('img/blog/article4.jpg') }}" class="img-fluid img-article">
                 <div class="mt-3"><h4>L’importance d’un Bon Design d’Email</h4></div>
                 <div class=" mt-2">
@@ -104,7 +68,8 @@
                 <div class=""><a class="btn btn-article mt-3 mb-5" href="{{ path('article_4') }}">Lire la suite</a>
                 </div>
             </div>
-            <div class="offset-lg-1 col-lg-5 filterDiv marketing">
+
+            <div class="offset-lg-1 col-lg-5" id="mrk_02">
                 <img src="{{ asset('img/blog/article1.png') }}" class="img-fluid img-article" alt="InconographieSEO">
                 <div class="mt-3"><h4>Stratégie SEO : Création et Optimisation </h4></div>
                 <div class=" mt-2">
@@ -114,7 +79,8 @@
                 <div class=""><a class="btn btn-article mt-3 mb-5"  href="{{ path('article_5') }}">Lire la suite</a>
                 </div>
             </div>
-            <div class="offset-lg-1 col-lg-5 filterDiv actu ">
+
+            <div class="offset-lg-1 col-lg-5" id="dev_03">
                 <img src="{{ asset('img/blog/article6.png') }}" class="img-fluid img-article" alt="InconographieIA">
                 <div class="mt-3"><h4>OpenClassrooms & Microsoft pour l'IA</h4></div>
                 <div class=" mt-2">
@@ -124,7 +90,8 @@
                 <div class=""><a class="btn btn-article mt-3 mb-5" href="{{ path('article_6') }}">Lire la suite</a>
                 </div>
             </div>
-            <div class="offset-lg-1 col-lg-5 filterDiv dev ">
+
+            <div class="offset-lg-1 col-lg-5" id="dev_04">
                 <img src="{{ asset('img/blog/article7.jpg') }}" class="img-fluid img-article" alt="puceAMD_RYZEN3000">
                 <div class="mt-3"><h4>AMD RYZEN 3000 date, CPU & Performances</h4></div>
                 <div class=" mt-2">
@@ -134,70 +101,63 @@
                 <div class=""><a class="btn btn-article mt-3 mb-5" href="{{ path('article_7') }}">Lire la suite</a>
                 </div>
             </div>
-            <div class="offset-lg-1 col-lg-5  filterDiv marketing ">
-                <img src="{{ asset('img/empty.png') }}" class="img-fluid img-article">
-                <div class="mt-3"><h4>Article Marketing 3</h4></div>
-                <div class=" mt-2">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies lorem augue.
-                    In nec eleifend orci, vitae fermentum dolor. Nunc turpis felis, sollicitudin ut s
-                    uscipit at, lobortis eu tortor. Aenean tempor risus nec cursus posuere
+
+            <div class="offset-lg-1 col-lg-5" id="design_02">
+                <img src="{{ asset('img/blog/article8.jpg') }}" class="img-fluid img-article">
+                <div class="mt-3"><h4>Des écouteurs en champignons</h4></div>
+                <div class=" mt-4">
+                    La culture de l’obsolescence programmée dans l’électronique produit une quantité énorme de déchets
+                    toxiques qui risquent de finir dans une décharge pour le prochain millénaire....
                 </div>
                 <div class=""><a class="btn btn-article mt-3 mb-5" href="{{ path('article_8') }}">Lire la suite</a>
                 </div>
             </div>
-
         </div>
-
     </div>
 
-
-
-
-
-{% endblock %}
-
-
-{% block javascripts %}
     <script>
-        filterSelection("all")
-        function filterSelection(c) {
-            var x, i;
-            x = document.getElementsByClassName("filterDiv");
-            if (c == "all") c = "";
-            for (i = 0; i < x.length; i++) {
-                w3RemoveClass(x[i], "show");
-                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-            }
+
+        mrk01 = document.getElementById("mrk_01");
+        mrk02 = document.getElementById("mrk_02");
+
+        dev01 = document.getElementById("dev_01");
+        dev02 = document.getElementById("dev_02");
+        dev03 = document.getElementById("dev_03");
+        dev04 = document.getElementById("dev_04");
+
+        design01 = document.getElementById("design_01");
+        design02 = document.getElementById("design_02");
+
+
+
+        function hidenn1() {
+            mrk01.style.display = (mrk01.style.display !== "none") ? "none" : "block";
+            mrk02.style.display = (mrk02.style.display !== "none") ? "none" : "block";
+
+            dev01.style.display = (dev01.style.display !== "none") ? "none" : "block";
+            dev02.style.display = (dev02.style.display !== "none") ? "none" : "block";
+            dev03.style.display = (dev03.style.display !== "none") ? "none" : "block";
+            dev04.style.display = (dev04.style.display !== "none") ? "none" : "block";
         }
-        function w3AddClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-                if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-            }
+
+        function hidenn2() {
+            design01.style.display = (design01.style.display !== "none") ? "none" : "block";
+            design02.style.display = (design02.style.display !== "none") ? "none" : "block";
+
+            dev01.style.display = (dev01.style.display !== "none") ? "none" : "block";
+            dev02.style.display = (dev02.style.display !== "none") ? "none" : "block";
+            dev03.style.display = (dev03.style.display !== "none") ? "none" : "block";
+            dev04.style.display = (dev04.style.display !== "none") ? "none" : "block";
         }
-        function w3RemoveClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-                while (arr1.indexOf(arr2[i]) > -1) {
-                    arr1.splice(arr1.indexOf(arr2[i]), 1);
-                }
-            }
-            element.className = arr1.join(" ");
-        }
-        // Add active class to the current button (highlight it)
-        var btnContainer = document.getElementById("myBtnContainer");
-        var btns = btnContainer.getElementsByClassName("filterElt");
-        for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function(){
-                var current = document.getElementsByClassName("active");
-                current[0].className = current[0].className.replace(" active", "");
-                this.className += " active";
-            });
+
+        function hidenn3() {
+            design01.style.display = (design01.style.display !== "none") ? "none" : "block";
+            design02.style.display = (design02.style.display !== "none") ? "none" : "block";
+
+            mrk01.style.display = (mrk01.style.display !== "none") ? "none" : "block";
+            mrk02.style.display = (mrk02.style.display !== "none") ? "none" : "block";
         }
     </script>
+
 
 {% endblock %}
