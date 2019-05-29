@@ -1,41 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="350117c2-d442-4903-b3ae-45ecc5d40274" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/arrowdown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/blog/article8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/blog/article8img2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/references/multilingua1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/references/multilingua2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/references/wyoga.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/references/wyoga1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/references/multilingua.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/references/webyoga.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/dev/web_profiler.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/dev/web_profiler.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/blog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/reference.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/reference.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/home/marvin.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/home/marvin.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/references/Louvre.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/references/Louvre.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/references/Louvre1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/references/Louvre1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ReferenceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ReferenceController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/ContactType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ContactType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/FormHandler/QuoteTypeHandler.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/QuoteType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/article_1.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/article_1.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/article_2.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/article_2.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/article_3.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/article_3.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/article_4.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/article_4.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/article_5.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/article_5.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/article_6.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/article_6.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/article_7.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/article_7.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/article_8.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/article_8.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/references/Louvre.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/references/Louvre.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/references/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/references/reference.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/references/reference.html.twig" afterDir="false" />
-    </list>
+    <list default="true" id="350117c2-d442-4903-b3ae-45ecc5d40274" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,34 +13,6 @@
     <execution>
       <executable />
     </execution>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/references/festival.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
-              <folding>
-                <element signature="e#12#26#0#Twig" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/references/reference.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="44" column="10" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
-              <folding>
-                <element signature="e#2086#2104#0#Twig" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -247,6 +185,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -257,60 +196,12 @@
             <path>
               <item name="Digital-Squad" type="b2602c69:ProjectViewProjectNode" />
               <item name="Digital-Squad" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Digital-Squad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Digital-Squad" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Digital-Squad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Digital-Squad" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Digital-Squad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Digital-Squad" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Digital-Squad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Digital-Squad" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Form" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Digital-Squad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Digital-Squad" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Form" type="462c0819:PsiDirectoryNode" />
-              <item name="FormHandler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Digital-Squad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Digital-Squad" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Digital-Squad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Digital-Squad" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Digital-Squad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Digital-Squad" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="references" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -496,7 +387,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139512000" />
+    <option name="totallyTimeSpent" value="139526000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -509,22 +400,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2575" height="1413" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33240557" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34075546" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.49383697" weight="0.23419204" />
-      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50735587" side_tool="true" visible="true" weight="0.18813427" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5001988" side_tool="true" visible="true" weight="0.32943013" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" sideWeight="0.49900597" weight="0.32943013" />
       <window_info anchor="bottom" id="Run" order="6" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49264413" visible="true" weight="0.18813427" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4998012" visible="true" weight="0.32943013" />
       <window_info anchor="bottom" id="TODO" order="11" sideWeight="0.49860835" weight="0.1904762" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
