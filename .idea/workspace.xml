@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="350117c2-d442-4903-b3ae-45ecc5d40274" name="Default Changelist" comment="" />
+    <list default="true" id="350117c2-d442-4903-b3ae-45ecc5d40274" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Digital-Squad.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Digital-Squad.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog/blog.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/blog.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/catalog.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/catalog.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/contact.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact.html.twig" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +21,19 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/blog/blog.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="101" selection-start-line="16" selection-start-column="101" selection-end-line="16" selection-end-column="101" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -49,17 +70,17 @@
         <option value="$PROJECT_DIR$/public/css/contact.css" />
         <option value="$PROJECT_DIR$/templates/blog.html.twig" />
         <option value="$PROJECT_DIR$/public/css/catalog.css" />
-        <option value="$PROJECT_DIR$/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/BlogController.php" />
         <option value="$PROJECT_DIR$/public/css/base.css" />
         <option value="$PROJECT_DIR$/templates/menu.html.twig" />
         <option value="$PROJECT_DIR$/templates/home.html.twig" />
-        <option value="$PROJECT_DIR$/templates/blog/blog.html.twig" />
-        <option value="$PROJECT_DIR$/templates/contact.html.twig" />
-        <option value="$PROJECT_DIR$/templates/catalog.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/ReferenceController.php" />
         <option value="$PROJECT_DIR$/templates/references/reference.html.twig" />
         <option value="$PROJECT_DIR$/templates/references/festival.html.twig" />
+        <option value="$PROJECT_DIR$/templates/catalog.html.twig" />
+        <option value="$PROJECT_DIR$/templates/base.html.twig" />
+        <option value="$PROJECT_DIR$/templates/contact.html.twig" />
+        <option value="$PROJECT_DIR$/templates/blog/blog.html.twig" />
       </list>
     </option>
   </component>
@@ -169,6 +190,7 @@
       <path value="$PROJECT_DIR$/vendor/ocramius/package-versions" />
       <path value="$PROJECT_DIR$/vendor/ocramius/proxy-manager" />
       <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/apache-pack" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -185,7 +207,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -196,12 +217,30 @@
             <path>
               <item name="Digital-Squad" type="b2602c69:ProjectViewProjectNode" />
               <item name="Digital-Squad" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Digital-Squad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Digital-Squad" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Digital-Squad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Digital-Squad" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Digital-Squad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Digital-Squad" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -277,6 +316,13 @@
       <workItem from="1559046884444" duration="685000" />
       <workItem from="1559049650795" duration="292000" />
       <workItem from="1559071646455" duration="1506000" />
+      <workItem from="1559305256653" duration="132000" />
+      <workItem from="1559993046802" duration="85000" />
+      <workItem from="1559997471570" duration="272000" />
+      <workItem from="1560194432736" duration="38000" />
+      <workItem from="1560194482008" duration="923000" />
+      <workItem from="1560236740486" duration="2673000" />
+      <workItem from="1560520248057" duration="2575000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1555067170347</created>
@@ -383,11 +429,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559060624784</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Ending project, merge all branch">
+      <created>1559156463164</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1559156463164</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139526000" />
+    <option name="totallyTimeSpent" value="147024000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -400,21 +453,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2575" height="1413" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34075546" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.361829" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
-      <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.49383697" weight="0.23419204" />
-      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5001988" side_tool="true" visible="true" weight="0.32943013" />
+      <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.49343938" weight="0.23419204" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5033797" side_tool="true" visible="true" weight="0.32943013" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" sideWeight="0.49900597" weight="0.32943013" />
       <window_info anchor="bottom" id="Run" order="6" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4998012" visible="true" weight="0.32943013" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49662027" visible="true" weight="0.32943013" />
       <window_info anchor="bottom" id="TODO" order="11" sideWeight="0.49860835" weight="0.1904762" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -504,7 +558,8 @@
     <MESSAGE value="ending catalog page" />
     <MESSAGE value="Merge branch 'contrib-Marvin' of https://github.com/clarkeley/Digital-Squad into contrib-Emmanuel&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;templates/base.html.twig" />
     <MESSAGE value="Add blog filter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add blog filter" />
+    <MESSAGE value="Ending project, merge all branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ending project, merge all branch" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/composer.json">
@@ -562,13 +617,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/references/index.html.twig" />
     <entry file="file://$PROJECT_DIR$/templates/blog.html.twig" />
-    <entry file="file://$PROJECT_DIR$/public/css/contact.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="72" selection-start-line="72" selection-end-line="78" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/home.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="884">
@@ -598,41 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/menu.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/blog/blog.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="e#65#79#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/contact.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-          <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
-            <element signature="e#119#133#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/catalog.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="958">
@@ -640,55 +653,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/catalog.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
-            <element signature="e#65#79#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-12987" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Services/SwiftMailer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/ContactController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Form/ContactType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Form/FormHandler/ContactTypeHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/home.html.twig">
@@ -737,6 +704,86 @@
           <folding>
             <element signature="e#12#26#0#Twig" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ContactController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="58" />
+          <folding>
+            <element signature="e#34#59#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Services/SwiftMailer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Form/FormHandler/ContactTypeHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Form/ContactType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/menu.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/catalog.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-408">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="42" column="75" lean-forward="true" selection-start-line="42" selection-start-column="75" selection-end-line="42" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/contact.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-141">
+          <caret line="78" column="1" lean-forward="true" selection-start-line="78" selection-start-column="1" selection-end-line="78" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/contact.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="60" column="18" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/blog/blog.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="101" selection-start-line="16" selection-start-column="101" selection-end-line="16" selection-end-column="101" />
         </state>
       </provider>
     </entry>

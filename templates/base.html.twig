@@ -53,8 +53,8 @@
                             <a class="modal-text pull-center col-lg-12 modal-text-align" href="{{ path('contact') }}">NOUS CONTACTER</a><br>
                         </div>
 
-                        <div class="row justify-content-sm-center">
-                            <a href="{{ path('catalog') }}" class="button btn-lg active modal-estimate" role="button" aria-pressed="true">Estimation en direct</a>
+                        <div class="row justify-content-center">
+                            <a href="{{ path('catalog') }}" class="button btn-lg mb-2 active modal-estimate" role="button" aria-pressed="true">Estimation en direct</a>
                         </div>
                     </div>
                 </div>
@@ -102,19 +102,19 @@
         <div class="siteMap text-center d-none d-sm-block">
             <ul class="nav nav-pills nav-fill">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Accueil</a>
+                    <a class="nav-link" href="{{ path('home') }}">Accueil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Nos Services</a>
+                    <a class="nav-link" href="{{ path('catalog') }}">Nos Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Nos Clients</a>
+                    <a class="nav-link" href="{{ path('reference.index') }}">Nos Clients</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Notre blog </a>
+                    <a class="nav-link" href="{{ path('blog') }}">Notre blog </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Nous contacter</a>
+                    <a class="nav-link" href="{{ path('contact') }}">Nous contacter</a>
                 </li>
             </ul>
         </div>
